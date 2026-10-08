@@ -4,7 +4,7 @@
 Una **obra con grúa**. En el hero, una grúa torre en 3D (three.js, procedural, sin marca) de cuyo gancho cuelga
 la acreditación profesional con la foto. La cuerda tiene física: se puede arrastrar y la credencial se balancea
 y sigue al gancho cuando el carro de la grúa se desplaza.
-Debajo, "las fases de una obra" (Estudio, Planificación, Ejecución, Control, Entrega) sustituye al mapa de metro.
+Debajo, "del dato a la decisión" (Datos, Análisis, Control, Automatización, Decisión) sustituye al mapa de metro. El enfoque del perfil es el análisis de datos aplicado a infraestructuras.
 
 ## Tokens
 - `noche #0A0C10` fondo · `asfalto #12161D` superficies · `riel #262C37` líneas
@@ -22,5 +22,5 @@ Formación · Contacto. Sin blog ni proyectos propios.
 - Los importes de las obras son los que figuran en el CV.
 
 ## Pendiente
-- Foto definitiva, dominio, revisión del inglés.
+- Dominio y revisión del inglés.
 - Animación de un camión al hacer scroll (fase 2).
