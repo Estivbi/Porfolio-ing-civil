@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@astrojs/check": "0.5.6",
-    "@astrojs/mdx": "2.1.1",
     "@astrojs/sitemap": "3.1.1",
     "@astrojs/tailwind": "5.1.0",
     "@fontsource-variable/familjen-grotesk": "^5.3.0",
@@ -21,11 +20,15 @@
     "astro-robots-txt": "1.0.0",
     "sharp": "^0.35.5",
     "tailwindcss": "3.4.1",
+    "three": "0.170.0",
     "typescript": "5.3.3"
   },
   "pnpm": {
     "overrides": {
       "sitemap": "7.1.1"
     }
+  },
+  "devDependencies": {
+    "@types/three": "0.170.0"
   }
 }

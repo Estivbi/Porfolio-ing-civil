@@ -1,288 +1,300 @@
 {
   "_review": "Idioma principal.",
   "meta": {
-    "title": "Carolina Rodríguez · Full Stack Developer & AI Engineer",
-    "description": "Desarrolladora full stack e ingeniera de IA en Madrid. Interfaces, APIs, datos, despliegue y agentes autónomos que llegan a producción."
+    "title": "Alejandro Hernández Fernández · Ingeniero de Caminos, Canales y Puertos",
+    "description": "Ingeniero de Caminos, Canales y Puertos en Madrid, especializado en gestión de obra, control económico y ciclo del agua. Del estudio previo a la entrega."
   },
   "a11y": {
     "skip": "Saltar al contenido",
     "menu": "Principal",
-    "lang": "Cambiar idioma"
+    "lang": "Cambiar idioma",
+    "craneScene": "Ilustración en 3D de una grúa torre de la que cuelga la acreditación profesional"
   },
   "nav": {
     "about": "Sobre mí",
     "experience": "Experiencia",
-    "work": "Proyectos",
-    "blog": "Blog",
+    "works": "Obras",
+    "education": "Formación",
     "contact": "Contacto",
     "cv": "CV"
   },
   "hero": {
-    "name1": "Carolina",
-    "name2": "Rodríguez",
-    "role": "Full Stack Developer & AI Engineer",
-    "intro": "Construyo software que llega a producción: de la interfaz al despliegue, y agentes con IA cuando de verdad ayudan.",
+    "name1": "Alejandro",
+    "name2": "Hernández",
+    "name3": "Fernández",
+    "role": "Ingeniero de Caminos, Canales y Puertos",
+    "intro": "Dirijo obras y controlo su coste, del estudio previo a la entrega. Mi especialidad es el ciclo del agua y los datos son mi herramienta.",
     "cta": "Hablemos",
     "cv": "Descargar CV",
     "sheet": {
       "name": "Nombre",
       "role": "Rol",
       "base": "Base",
-      "stop": "Última parada",
+      "focus": "Especialidad",
       "baseValue": "Madrid, España",
-      "stopValue": "tu proyecto"
+      "focusValue": "Ciclo del agua"
     },
-    "mapLabel": "Mapa de una petición, de punta a punta",
-    "mapHint": "Toca una estación para ver qué hago en ella.",
+    "mapLabel": "Las fases de una obra, de principio a fin",
+    "mapHint": "Toca una fase para ver qué hago en ella.",
     "stations": [
       {
-        "name": "Idea",
-        "text": "Entiendo qué problema hay que resolver antes de abrir el editor.",
-        "tech": "Jira, Confluence, Figma"
+        "name": "Estudio",
+        "text": "Estudio previo técnico-económico y de viabilidad antes de mover tierra.",
+        "tech": "Viabilidad, mediciones, presupuesto"
       },
       {
-        "name": "Interfaz",
-        "text": "Frontend cuidado, del diseño en Figma a una web que carga rápido.",
-        "tech": "React, Next.js, Astro, Tailwind"
+        "name": "Planificación",
+        "text": "Planificación a corto y medio plazo, con plazos e hitos que se pueden seguir.",
+        "tech": "Scheduling, hitos, coordinación de equipos"
       },
       {
-        "name": "API",
-        "text": "Backends y APIs REST documentadas, con la base de datos bien pensada.",
-        "tech": "Python, FastAPI, Node.js, PostgreSQL, SQL"
+        "name": "Ejecución",
+        "text": "Producción a pie de obra y coordinación de las disciplinas y las subcontratas.",
+        "tech": "Dirección de obra, subcontratas, calidad"
       },
       {
-        "name": "Agente",
-        "text": "Agentes y automatizaciones que trabajan solos y avisan cuando algo falla.",
-        "tech": "LangGraph, LLMs, Celery, Redis"
+        "name": "Control",
+        "text": "Seguimiento de costes y KPIs de producción, análisis de desviaciones y certificaciones.",
+        "tech": "Control analítico, Excel avanzado, Python"
       },
       {
-        "name": "Producción",
-        "text": "Despliegue con contenedores y CI/CD, con tests antes de cada versión.",
-        "tech": "Docker, GitHub Actions, AWS, Linux"
+        "name": "Entrega",
+        "text": "Cierre de la obra, documentación y entrega al cliente.",
+        "tech": "Recepción, documentación, PRL"
       }
     ],
     "badge": {
-      "label": "Línea Full Stack",
-      "back": "Madrid · Full Stack · AI Engineer · próxima parada: tu proyecto"
+      "label": "Ingeniería civil",
+      "back": "Madrid · Ingeniero de Caminos · Ciclo del agua · Gestión de obra"
     }
   },
-  "stack": {
-    "label": "Tecnologías con las que trabajo"
+  "marquee": {
+    "label": "Áreas y herramientas",
+    "items": [
+      "Gestión de obra",
+      "Ciclo del agua",
+      "EDAR",
+      "Colectores y saneamiento",
+      "Urbanización",
+      "Planificación y scheduling",
+      "Control de costes",
+      "Certificaciones",
+      "Subcontratas",
+      "Control de calidad",
+      "PRL",
+      "AutoCAD",
+      "MS Excel avanzado",
+      "Python",
+      "Azure IA"
+    ]
   },
   "about": {
     "title": "Un poco de mí.",
     "paragraphs": [
-      "Siempre tuve curiosidad por cómo funcionan las cosas, y los ordenadores fueron lo primero que me enganchó. Empecé por mi cuenta y después lo formalicé con el Grado Superior en Desarrollo de Aplicaciones Multiplataforma en U-tad y un bootcamp de Python.",
-      "Desde entonces he pasado por banca, por producto fiscal y por software de gestión con más de 25 años de historia. Me gusta entender el problema entero antes de tocar código, y me siento igual de cómoda afinando una interfaz que montando el despliegue.",
-      "Con la IA hago dos cosas distintas: la uso para trabajar mejor y construyo soluciones que la integran, como los agentes y automatizaciones de mis productos. Lo primero me acelera; lo segundo resuelve problemas. Ninguna de las dos sustituye saber ingeniería."
+      "Soy Ingeniero de Caminos, Canales y Puertos y me especializo en la gestión integral de infraestructuras y en el ciclo del agua. Trabajo en obra y en proyecto desde 2019: estaciones depuradoras, colectores, urbanizaciones y centros de datos.",
+      "Mi día a día va de la planificación y la producción a pie de obra al control de costes y las certificaciones. Me gusta tener los números claros: seguir los plazos, analizar las desviaciones y que cada fase sea rentable.",
+      "También trabajo con datos. Uso Python aplicado a ingeniería, Excel avanzado y fundamentos de inteligencia artificial y cloud para automatizar procesos y decidir con mejor información."
     ],
-    "photoAlt": "Retrato de Carolina Rodríguez",
+    "photoAlt": "Retrato de Alejandro Hernández Fernández",
     "areasTitle": "Lo que hago a diario",
     "areas": [
       {
-        "name": "Desarrollo web",
-        "tech": "React, Next.js, Astro, Tailwind"
+        "name": "Gestión de obra",
+        "tech": "Dirección integral, producción a pie de obra, coordinación de disciplinas"
       },
       {
-        "name": "Backend",
-        "tech": "Python, FastAPI, Node.js, PostgreSQL, SQL"
+        "name": "Ciclo del agua",
+        "tech": "EDAR, colectores emisarios, redes de saneamiento"
       },
       {
-        "name": "Arquitectura",
-        "tech": "MVC, APIs REST, Clean Code"
+        "name": "Planificación",
+        "tech": "Scheduling, plazos e hitos, corto y medio plazo"
       },
       {
-        "name": "IA y agentes",
-        "tech": "LangGraph, LLMs, automatización"
+        "name": "Control económico",
+        "tech": "Costes, desviaciones, certificaciones, subcontratas"
       },
       {
-        "name": "UX e interfaces",
-        "tech": "Figma, diseño de interfaces"
+        "name": "Calidad y prevención",
+        "tech": "Control de calidad, Técnico en PRL (60 h)"
       },
       {
-        "name": "Producto",
-        "tech": "Scrum, Agile, Jira"
+        "name": "Datos y automatización",
+        "tech": "Python, Excel avanzado, Azure IA"
       },
       {
-        "name": "DevOps",
-        "tech": "Docker, GitHub Actions, AWS, CI/CD"
+        "name": "Software técnico",
+        "tech": "AutoCAD, entornos de modelado y diseño civil"
       }
     ]
   },
   "experience": {
     "title": "Por dónde he pasado.",
-    "hint": "Despliega cada parada para ver qué hice allí.",
+    "hint": "Despliega cada etapa para ver qué hice allí.",
     "items": [
       {
-        "company": "CSS Connection Soft Service",
-        "role": "Lead Frontend y Full Stack Developer",
-        "period": "ene. 2026 – presente",
+        "company": "Cadagua",
+        "role": "Responsable de ejecución de obras de mejora de EDAR",
+        "period": "nov. 2024 – ago. 2026",
         "points": [
-          "Modernización integral de la interfaz de un DMS con más de 25 años en el mercado, con JavaScript y diseño en Figma.",
-          "Análisis de la arquitectura para renovar el portal corporativo y liderazgo de la migración a WordPress para integrar el blog y el SEO.",
-          "Liderazgo del desarrollo desde cero de un portal de APIs RESTful, con los endpoints documentados en YAML.",
-          "Refactorización de código legacy en ColdFusion hacia una arquitectura MVC y optimización de consultas SQL para reducir tiempos de respuesta.",
-          "Trabajo con Jira, control de versiones y documentación técnica en Confluence."
+          "Gestión integral de las obras de mejora en 16 estaciones depuradoras del Grupo Cuenca Guadarrama para el Canal de Isabel II, desde el estudio previo técnico-económico y de viabilidad hasta la ejecución final y la entrega.",
+          "Definición de la planificación estratégica de los trabajos y seguimiento de plazos.",
+          "Control de costes, análisis de desviaciones, gestión de subcontratas y supervisión del presupuesto para garantizar la rentabilidad de las mejoras."
         ],
-        "tags": [
-          "JavaScript",
-          "APIs REST",
-          "ColdFusion",
-          "SQL",
-          "WordPress",
-          "Figma"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["EDAR", "Canal de Isabel II", "Planificación", "Control de costes"]
       },
       {
-        "company": "Stibios",
-        "role": "Producto independiente (marca personal)",
-        "period": "en curso",
+        "company": "ACSA Obras e Infraestructuras",
+        "role": "Producción y co-dirección técnica de obra",
+        "period": "oct. 2023 – nov. 2024",
         "points": [
-          "Diseño y construcción de mis propios productos, de la idea al despliegue.",
-          "Stibios Agent Platform: agentes autónomos con LangGraph y Gemini que generan contenido y leads para varios proyectos y reportan por Telegram."
+          "Dirección de la producción a pie de obra en la adecuación de la EDAR Arroyo del Soto al Plan Nacional de Calidad de las Aguas, con un presupuesto de 14,6 M€ para el Canal de Isabel II.",
+          "Apoyo directo al Jefe de Obra en la definición de estrategias constructivas y decisiones técnicas, y planificación operativa a corto y medio plazo con coordinación transversal de las disciplinas.",
+          "Seguimiento de KPIs de producción, análisis de desviaciones presupuestarias y control de costes, con elaboración de certificaciones e informes de estado."
         ],
-        "tags": [
-          "Python",
-          "LangGraph",
-          "FastAPI",
-          "GitHub Actions"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["EDAR", "14,6 M€", "KPIs", "Certificaciones"]
       },
       {
-        "company": "Revista Victoria",
-        "role": "Cofundadora y Full Stack Developer",
-        "period": "abr. 2025 – presente",
+        "company": "Virtón",
+        "role": "Jefe de Obra y Adjunto a Jefe de Obra",
+        "period": "sep. 2021 – oct. 2023",
         "points": [
-          "Diseño y desarrollo desde cero de la web de una revista de moda independiente, alineada con su identidad editorial.",
-          "Estructura optimizada para SEO y un gestor de contenidos a medida para que la redacción actualice el sitio sin ayuda.",
-          "Mantenimiento continuo, ajustes visuales y soporte técnico."
+          "Jefe de Obra en la urbanización Cocheras Buenavista (mar.–oct. 2023), para PRYCONSA y el Ayuntamiento de Madrid: dirección integral, control analítico de costes sobre 1 M€, gestión de subcontratas y certificaciones mensuales.",
+          "Adjunto a Jefe de Obra en la remodelación urbana de Getafe (dic. 2022 – oct. 2023): coordinación técnica a pie de obra en el acceso desde la M-406 (Barrio Centro – San Isidro), con 2,4 M€ para el Ayuntamiento de Getafe.",
+          "Adjunto a Jefe de Obra en los colectores emisarios de Villarrozas (abr. 2022 – feb. 2023): apoyo a la dirección técnica y control de ejecución de infraestructuras hidráulicas y caminos de servicio (1,7 M€) para el Canal de Isabel II.",
+          "Jefe de Obra y Calidad en la urbanización de los Data Centers MAD01 y MAD02 para Microsoft (oct. 2021 – abr. 2022): ejecución y control de calidad de dos proyectos simultáneos de 2,2 M€ y 9,8 M€."
         ],
-        "tags": [
-          "Astro",
-          "React",
-          "Sanity",
-          "SEO"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Urbanización", "Jefe de Obra", "Calidad", "Subcontratas"]
       },
       {
-        "company": "Indra",
-        "role": "Desarrolladora Full Stack",
-        "period": "sep. 2025 – 2026",
+        "company": "Inncive",
+        "role": "Departamento de proyectos",
+        "period": "sep. 2020 – sep. 2021",
         "points": [
-          "Mejoras en el frontend (JavaScript) y el backend (PHP) de un sistema de monitorización, optimizando interfaces y procesos de carga de datos.",
-          "Tests automáticos y funcionales para validar cada novedad antes del despliegue.",
-          "Colaboración en entornos DevOps con máquinas virtuales de desarrollo, pruebas y producción."
+          "Apoyo técnico en campo y recopilación de datos para el diseño de proyectos de mejora de infraestructuras hidráulicas, en especial la EDAR de Villanueva de la Cañada y la red de saneamiento de Yeles."
         ],
-        "tags": [
-          "JavaScript",
-          "PHP",
-          "Testing",
-          "DevOps"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Proyectos", "EDAR", "Saneamiento"]
       },
       {
-        "company": "Me Asesoran",
-        "role": "Desarrolladora Full Stack",
-        "period": "nov. 2023 – jun. 2025",
+        "company": "AVK Válvulas",
+        "role": "Ingeniero en prácticas, Departamento Comercial y de Estudios",
+        "period": "jun. 2019 – ago. 2020",
         "points": [
-          "Trabajo cercano con el equipo de producto para convertir necesidades de usuarios en funcionalidades.",
-          "Desarrollo de Me Asesoran Rentas, backend y frontend: integración con la API y el sistema de autenticación del gobierno de España, y validación y envío de declaraciones por parte de asesores fiscales."
+          "Elaboración de estudios técnicos a nivel nacional e internacional.",
+          "Diseño y estructuración de una nueva base de datos de productos técnicos, optimizando las especificaciones para crear una herramienta de consulta más intuitiva y eficiente."
         ],
-        "tags": [
-          "Next.js",
-          "React Native",
-          "Tailwind",
-          "API AEAT"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Estudios técnicos", "Bases de datos", "Válvulas"]
       }
     ]
   },
-  "work": {
-    "title": "Lo que ya funciona.",
-    "visit": "Ver en vivo",
-    "pending": "Captura pendiente",
+  "works": {
+    "title": "Obras en las que he trabajado.",
+    "intro": "Presupuestos de las obras que he dirigido o en las que he sido adjunto.",
+    "clientLabel": "Cliente",
+    "roleLabel": "Mi papel",
     "items": [
       {
-        "name": "MadRing Guide",
-        "url": "https://f1madrid.stibios.com",
-        "text": "PWA para seguir el Gran Premio de España de F1 en el circuito MADRING de Madrid, con agenda de la semana, transporte, zonas del circuito y cronometraje en vivo. Dibuja la posición de los coches en tiempo real sobre un trazado generado a partir de la propia telemetría, sin ilustrar cada circuito.",
-        "tags": [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Supabase",
-          "Serwist (PWA)",
-          "Framer Motion",
-          "Tailwind",
-          "Vercel",
-          "OpenF1",
-          "GitHub Actions"
-        ],
-        "image": "madring-inicio.png",
-        "imageAlt": "Pantalla de inicio de MadRing Guide: cuenta atrás, accesos a agenda, zonas, transporte y datos de F1.",
-        "role": "Producto, diseño, frontend, backend, base de datos, despliegue y SEO.",
-        "period": "Agosto – septiembre de 2026. Lanzada en el GP del 11 al 13 de septiembre.",
-        "points": [
-          "Un proxy con caché de 25 s, single-flight y peticiones escalonadas mantiene los límites de OpenF1 por mucho tráfico que haya.",
-          "La agenda se renderiza en servidor para que buscadores y asistentes de IA la lean sin ejecutar JavaScript."
-        ]
+        "name": "EDAR Arroyo del Soto",
+        "figure": "14,6 M€",
+        "client": "Canal de Isabel II",
+        "role": "Producción a pie de obra y co-dirección técnica",
+        "period": "2023 – 2024",
+        "text": "Adecuación de la depuradora al Plan Nacional de Calidad de las Aguas."
       },
       {
-        "name": "Stibios Agent Platform",
-        "url": "",
-        "text": "Plataforma de agentes de IA autónomos, 24/7, que generan contenido, analizan tendencias y cualifican leads para varios proyectos: Revista Victoria, MadRing y Blog Stibios. Orquesta grafos de LangGraph con Gemini 2.5, publica en Sanity y Supabase y avisa por Telegram sin intervención humana.",
-        "tags": [
-          "Python",
-          "LangGraph",
-          "Gemini 2.5",
-          "FastAPI",
-          "Celery",
-          "Redis",
-          "Supabase",
-          "Sanity",
-          "GitHub Actions",
-          "Telegram"
-        ],
-        "image": "stibios-panel.png",
-        "imageAlt": "Panel de Stibios Agents: tarjetas de estado de cada agente y tabla con las últimas ejecuciones.",
-        "role": "Full stack developer y arquitecta: diseño completo de la plataforma, de todos los agentes y de la infraestructura.",
-        "period": "Mayo 2026 – presente. Repositorio privado.",
-        "points": [
-          "Hay ocho agentes en producción: noticias, briefing de desarrollo, blogs (Stibios, Victoria y Pádel), leads, tendencias y el scraper de MadRing.",
-          "Se ejecutan en GitHub Actions, con cron y ejecución manual, sin servidor propio."
-        ]
+        "name": "Data Centers MAD01 y MAD02",
+        "figure": "9,8 M€ y 2,2 M€",
+        "client": "Microsoft",
+        "role": "Jefe de Obra y Calidad",
+        "period": "2021 – 2022",
+        "text": "Urbanización de dos proyectos simultáneos, con gestión operativa y documental."
+      },
+      {
+        "name": "Remodelación urbana en Getafe",
+        "figure": "2,4 M€",
+        "client": "Ayuntamiento de Getafe",
+        "role": "Adjunto a Jefe de Obra",
+        "period": "2022 – 2023",
+        "text": "Remodelación de la carretera de acceso desde la M-406, entre el Barrio Centro y San Isidro."
+      },
+      {
+        "name": "Colectores emisarios de Villarrozas",
+        "figure": "1,7 M€",
+        "client": "Canal de Isabel II",
+        "role": "Adjunto a Jefe de Obra",
+        "period": "2022 – 2023",
+        "text": "Infraestructuras hidráulicas y caminos de servicio."
+      },
+      {
+        "name": "Urbanización Cocheras Buenavista",
+        "figure": "1 M€",
+        "client": "PRYCONSA y Ayuntamiento de Madrid",
+        "role": "Jefe de Obra",
+        "period": "2023",
+        "text": "Dirección integral de la urbanización, con control analítico de costes y certificaciones mensuales."
+      },
+      {
+        "name": "Mejora de 16 EDAR del Grupo Cuenca Guadarrama",
+        "figure": "16 EDAR",
+        "client": "Canal de Isabel II",
+        "role": "Responsable de ejecución",
+        "period": "2024 – 2026",
+        "text": "Gestión integral de las obras de mejora, del estudio previo a la entrega."
+      }
+    ]
+  },
+  "education": {
+    "title": "Formación.",
+    "degreesTitle": "Estudios",
+    "certsTitle": "Certificaciones e idiomas",
+    "degrees": [
+      {
+        "name": "Máster Universitario en Ingeniería de Caminos, Canales y Puertos",
+        "place": "Universidad Europea de Madrid",
+        "period": "2022 – 2024"
+      },
+      {
+        "name": "Grado en Ingeniería Civil, especialidad en Construcciones Civiles e Hidrología",
+        "place": "Universidad Politécnica de Madrid",
+        "period": "2014 – 2021"
       }
     ],
-    "intro": "Son proyectos míos: los diseño, los construyo y los mantengo yo de principio a fin.",
-    "private": "Repositorio privado"
+    "certs": [
+      {
+        "name": "Fundamentos de Inteligencia Artificial (AI-900)",
+        "place": "Microsoft Azure",
+        "period": "2026"
+      },
+      {
+        "name": "Data Science y Programación en Python",
+        "place": "DataCamp",
+        "period": "2026"
+      },
+      {
+        "name": "Técnico en Prevención de Riesgos Laborales",
+        "place": "60 horas",
+        "period": ""
+      },
+      {
+        "name": "Inglés",
+        "place": "Nivel B2",
+        "period": ""
+      }
+    ]
   },
   "contact": {
-    "title": "Próxima parada: tu proyecto.",
-    "text": "Cuéntame qué quieres construir o arreglar y vemos por dónde empezar.",
-    "email": "carolinarb1994@gmail.com",
+    "title": "Hablemos de tu obra.",
+    "text": "Si tienes una obra, un proyecto o una oportunidad en la que pueda aportar, escríbeme.",
+    "email": "alejandro.hfernandez95@gmail.com",
+    "phone": "+34 680 36 30 36",
+    "phoneHref": "+34680363036",
     "copy": "Copiar email",
-    "copied": "Copiado. Buen viaje.",
+    "copied": "Copiado.",
     "copyFail": "No se pudo copiar. Selecciónalo y cópialo a mano."
   },
   "footer": {
-    "made": "Hecho en Madrid, sin prisa y sin plantillas.",
-    "top": "Volver a cabecera",
-    "rights": "Carolina Rodríguez"
-  },
-  "blog": {
-    "title": "Cuaderno de bitácora.",
-    "intro": "Notas sobre desarrollo, agentes y producto. Todavía no hay entradas, pero llegarán.",
-    "empty": "Aún no hay entradas.",
-    "back": "Volver al inicio"
+    "made": "Madrid · Ingeniería civil.",
+    "top": "Volver arriba",
+    "rights": "Alejandro Hernández Fernández"
   }
 }

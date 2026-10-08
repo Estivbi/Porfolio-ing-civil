@@ -1,0 +1,249 @@
+---
+import { Image } from 'astro:assets'
+import me from '../assets/me.jpg'
+import { getDict, type Lang } from '../i18n'
+const { lang } = Astro.props as { lang: Lang }
+const d = getDict(lang)
+const s = d.hero.sheet
+---
+
+<div class="stage" data-stage role="img" aria-label={d.a11y.craneScene}>
+  <canvas class="scene" data-scene aria-hidden="true"></canvas>
+
+  <svg class="strap" aria-hidden="true" focusable="false">
+    <path data-strap d="" fill="none" stroke="#aab1bb" stroke-width="5" stroke-linecap="round" />
+    <path data-strap-stitch d="" fill="none" stroke="#2a2f38" stroke-opacity=".7" stroke-width="5" stroke-dasharray="2 5" />
+  </svg>
+
+  <div class="card" data-card>
+    <svg class="sling" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+      <path d="M50 0 L9 40 M50 0 L91 40" stroke="#aab1bb" stroke-width="2.5" vector-effect="non-scaling-stroke" fill="none" />
+      <circle cx="50" cy="3" r="3" fill="#2a2f38" stroke="#aab1bb" stroke-width="1.5" vector-effect="non-scaling-stroke" />
+    </svg>
+    <div class="back" aria-hidden="true"><span>{d.hero.badge.back}</span></div>
+    <div class="front">
+      <span class="slot" aria-hidden="true"></span>
+      <Image
+        src={me}
+        alt={d.about.photoAlt}
+        widths={[320, 480, 640]}
+        sizes="(max-width: 767px) 176px, 256px"
+        format="webp"
+        loading="eager"
+        fetchpriority="high"
+        draggable="false"
+        class="photo"
+      />
+      <div class="foot">
+        <p class="font-mono text-[.68rem] text-niebla">{d.hero.badge.label}</p>
+        <p class="mt-1 flex items-center justify-between gap-3 text-s0 font-semibold">
+          <span><span class="text-niebla font-normal text-sm">{s.focus}: </span>{s.focusValue}</span>
+          <span class="station" aria-hidden="true" style="border-color:#f5b50a"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .stage { position: relative; width: 100%; max-width: 30rem; height: 46rem; margin-inline: auto; --w: 16rem; --sling: 2.5rem; --rope: 5rem; }
+  .scene {
+    position: absolute; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none;
+    -webkit-mask-image: linear-gradient(to bottom, #000 62%, transparent 98%), linear-gradient(to right, transparent 0, #000 7%, #000 90%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to bottom, #000 62%, transparent 98%), linear-gradient(to right, transparent 0, #000 7%, #000 90%, transparent 100%);
+    mask-composite: intersect;
+  }
+  .strap { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; z-index: 0; }
+  .card {
+    position: absolute; left: 0; top: 0; width: var(--w); padding-top: var(--sling);
+    transform-origin: 50% 0; will-change: transform; z-index: 1;
+    cursor: grab; touch-action: pan-y; user-select: none; -webkit-user-select: none;
+    /* hasta que arranque el script: colgando del centro */
+    transform: translate(calc(var(--ax, 50%) - var(--w) / 2), var(--ay, 9rem));
+  }
+  .card.dragging { cursor: grabbing; }
+  .sling { position: absolute; left: 0; top: 0; width: 100%; height: var(--sling); overflow: visible; }
+  .front {
+    position: relative; background: #12161d; border: 1px solid #262c37; border-radius: 10px; overflow: hidden;
+    box-shadow: 0 18px 40px -18px rgba(0,0,0,.8);
+  }
+  .photo { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: top; pointer-events: none; }
+  .foot { padding: .85rem 1rem 1rem; border-top: 1px solid #262c37; }
+  /* ranura de la acreditación */
+  .slot {
+    position: absolute; z-index: 2; left: 50%; top: 12px; width: 44px; height: 10px; margin-left: -22px;
+    border-radius: 5px; background: #0a0c10; border: 1px solid #262c37;
+  }
+  /* reverso asomando por detrás */
+  .back {
+    position: absolute; top: var(--sling); left: 0; right: 0; bottom: 0; z-index: -1; border-radius: 10px;
+    background: #1a1f28; border: 1px solid #262c37;
+    transform: translate(15%, 3%) rotate(7deg); transform-origin: 50% 0;
+    transition: transform 320ms cubic-bezier(.2,.7,.2,1);
+    display: flex; justify-content: flex-end; align-items: center; padding-right: .9rem; overflow: hidden;
+  }
+  .back span { writing-mode: vertical-rl; font-family: 'Geist Mono Variable', monospace; font-size: .7rem; color: #9aa3b2; letter-spacing: .06em; white-space: nowrap; }
+  .card:hover .back { transform: translate(18%, 4%) rotate(9deg); }
+
+  @media (max-width: 767px) {
+    .stage { --w: 11rem; --sling: 2rem; --rope: 3.5rem; height: 33rem; max-width: 22rem; }
+    .back { transform: translate(24%, 3%) rotate(7deg); }
+    .card:hover .back { transform: translate(24%, 3%) rotate(7deg); }
+  }
+</style>
+
+<script>
+  type P = { x: number; y: number; px: number; py: number }
+
+  async function init() {
+    const stage = document.querySelector<HTMLElement>('[data-stage]')
+    if (!stage || stage.dataset.ready) return
+    stage.dataset.ready = '1'
+    const card = stage.querySelector<HTMLElement>('[data-card]')!
+    const canvas = stage.querySelector<HTMLCanvasElement>('[data-scene]')!
+    const strap = stage.querySelector<SVGPathElement>('[data-strap]')!
+    const stitch = stage.querySelector<SVGPathElement>('[data-strap-stitch]')!
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    const N = 10             // segmentos de la cuerda
+    const GRAVITY = 0.55
+    const DAMP = 0.992
+    const px = (name: string) => {
+      const probe = document.createElement('div')
+      probe.style.cssText = `position:absolute;visibility:hidden;width:var(${name})`
+      stage.appendChild(probe)
+      const v = probe.getBoundingClientRect().width
+      probe.remove()
+      return v
+    }
+
+    let ropeLen = 0, seg = 0, cardW = 0
+    let ax = 0, ay = 0           // punto de enganche (el gancho de la grúa)
+    let pts: P[] = []
+    let dragging = false
+    let offX = 0, offY = 0, tx = 0, ty = 0
+    let raf = 0
+    let cranes: Awaited<ReturnType<typeof import('../scripts/crane').mountCrane>> | null = null
+
+    const setAnchor = () => {
+      if (cranes) { const a = cranes.anchor(); ax = a.x; ay = a.y }
+      else { const r = stage.getBoundingClientRect(); ax = r.width * 0.64; ay = r.height * 0.2 }
+    }
+
+    const build = (kick: boolean) => {
+      ropeLen = px('--rope')
+      cardW = px('--w')
+      seg = ropeLen / N
+      setAnchor()
+      pts = Array.from({ length: N + 1 }, (_, i) => {
+        const y = ay + (ropeLen * i) / N
+        const v = kick ? (i / N) * 9 : 0
+        return { x: ax, y, px: ax - v, py: y }
+      })
+    }
+
+    const render = () => {
+      const last = pts[N], ref = pts[N - 3]
+      const ang = -Math.atan2(last.x - ref.x, last.y - ref.y) * (180 / Math.PI)
+      card.style.transform = `translate(${last.x - cardW / 2}px, ${last.y}px) rotate(${ang}deg)`
+      const d = pts.map((p, i) => `${i ? 'L' : 'M'}${p.x.toFixed(1)} ${p.y.toFixed(1)}`).join(' ')
+      strap.setAttribute('d', d)
+      stitch.setAttribute('d', d)
+    }
+
+    const step = () => {
+      pts[0].x = ax; pts[0].y = ay; pts[0].px = ax; pts[0].py = ay
+      for (let i = 1; i <= N; i++) {
+        const p = pts[i]
+        if (dragging && i === N) { p.px = p.x; p.py = p.y; continue }
+        const vx = (p.x - p.px) * DAMP, vy = (p.y - p.py) * DAMP
+        p.px = p.x; p.py = p.y
+        p.x += vx; p.y += vy + GRAVITY
+      }
+      if (dragging) {
+        let dx = tx - ax, dy = ty - ay
+        const d = Math.hypot(dx, dy)
+        if (d > ropeLen) { dx = (dx / d) * ropeLen; dy = (dy / d) * ropeLen }
+        pts[N].x = ax + dx; pts[N].y = ay + dy
+      }
+      for (let it = 0; it < 16; it++) {
+        for (let i = 0; i < N; i++) {
+          const a = pts[i], b = pts[i + 1]
+          const dx = b.x - a.x, dy = b.y - a.y
+          const d = Math.hypot(dx, dy) || 1e-4
+          const k = (d - seg) / d
+          const aFixed = i === 0
+          const bFixed = dragging && i + 1 === N
+          if (aFixed && !bFixed) { b.x -= dx * k; b.y -= dy * k }
+          else if (bFixed && !aFixed) { a.x += dx * k; a.y += dy * k }
+          else if (!aFixed && !bFixed) { a.x += dx * k * 0.5; a.y += dy * k * 0.5; b.x -= dx * k * 0.5; b.y -= dy * k * 0.5 }
+        }
+      }
+    }
+
+    const t0 = performance.now()
+    const loop = () => {
+      if (!stage.isConnected) { cranes?.dispose(); return }
+      cranes?.render((performance.now() - t0) / 1000)
+      setAnchor()
+      step()
+      render()
+      raf = requestAnimationFrame(loop)
+    }
+    const start = () => { if (!raf) raf = requestAnimationFrame(loop) }
+    const stop = () => { cancelAnimationFrame(raf); raf = 0 }
+
+    build(false)
+    render()
+
+    // la grúa se carga aparte para no frenar el primer pintado
+    try {
+      const { mountCrane } = await import('../scripts/crane')
+      cranes = mountCrane(canvas, { animate: !reduce })
+      cranes.resize()
+      cranes.render(0)
+    } catch {
+      cranes = null
+    }
+    if (!stage.isConnected) { cranes?.dispose(); return }
+    build(!reduce)
+    render()
+
+    const onResize = () => { cranes?.resize(); cranes?.render((performance.now() - t0) / 1000); build(false); render() }
+    window.addEventListener('resize', onResize)
+
+    if (reduce) {
+      // sin movimiento: la credencial cuelga recta del gancho y no se arrastra
+      for (let i = 0; i < 400; i++) step()
+      render()
+      card.style.cursor = 'default'
+      return
+    }
+
+    const local = (e: PointerEvent) => {
+      const r = stage.getBoundingClientRect()
+      return { x: e.clientX - r.left, y: e.clientY - r.top }
+    }
+    card.addEventListener('pointerdown', e => {
+      const m = local(e)
+      dragging = true
+      offX = m.x - pts[N].x; offY = m.y - pts[N].y
+      tx = pts[N].x; ty = pts[N].y
+      card.classList.add('dragging')
+      card.setPointerCapture(e.pointerId)
+    })
+    card.addEventListener('pointermove', e => {
+      if (!dragging) return
+      const m = local(e)
+      tx = m.x - offX; ty = m.y - offY
+    })
+    const release = () => { dragging = false; card.classList.remove('dragging') }
+    card.addEventListener('pointerup', release)
+    card.addEventListener('pointercancel', release)
+
+    // solo anima mientras está en pantalla
+    new IntersectionObserver(([en]) => (en.isIntersecting ? start() : stop())).observe(stage)
+  }
+  document.addEventListener('astro:page-load', init)
+</script>

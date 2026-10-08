@@ -1,13 +1,14 @@
-# Portfolio de Carolina Rodríguez
+# Portfolio de Alejandro Hernández Fernández
 
-Portfolio personal de Carolina Rodríguez, Full Stack Developer & AI Engineer en Madrid.
-Está en español (`/`) y en inglés (`/en`).
+Portfolio de Alejandro Hernández Fernández, Ingeniero de Caminos, Canales y Puertos en Madrid.
+Está en español (`/`) y en inglés (`/en`). Sirve también como **plantilla de portfolio para ingeniería civil**:
+cambiando los textos y la foto, vale para otra persona.
 
 ## Stack
 
 - [Astro](https://astro.build) 4 con View Transitions y rutas i18n nativas
 - Tailwind CSS 3 y TypeScript
-- MDX para el blog (colección de contenido `blog`)
+- [three.js](https://threejs.org) para la grúa torre del hero (procedural, sin modelos ni marcas externas)
 - Fuentes autoalojadas con Fontsource (Familjen Grotesk y Geist Mono)
 - Imágenes optimizadas con `astro:assets` y `sharp` (webp)
 - Sitemap con hreflang, `robots.txt` y JSON-LD de tipo Person
@@ -27,26 +28,25 @@ pnpm preview    # sirve el build
 
 ```
 src/
-  components/   Hero, LineMap (mapa de línea), Lanyard (tarjeta colgante), About,
-                Experience, Work, Contact, Header, Footer...
-  content/blog/ entradas del blog en MDX (plantilla en borrador incluida)
+  components/   Hero, CraneHero (grúa 3D + credencial), LineMap (fases de obra), About,
+                Works (obras), Experience, Education, Contact, Header, Footer...
+  scripts/      crane.ts: la grúa torre en three.js
   i18n/         es.json, en.json e index.ts con el tipado de los textos
   layouts/      Layout.astro (SEO, hreflang, JSON-LD, View Transitions)
-  pages/        / y /en, más /blog y /en/blog
+  pages/        / y /en
   styles/       global.css (Tailwind)
-DESIGN.md       dirección de diseño y tokens (paleta, tipografía, movimiento)
 ```
 
-## Contenido
+## Adaptarlo a otra persona
 
 - **Textos:** todos están en `src/i18n/es.json` y `en.json`. Si el inglés no tiene la misma
   forma que el español, el build falla. La traducción al inglés está pendiente de revisión.
-- **Proyectos y experiencia:** también salen de los diccionarios (`work` y `experience`).
-- **Blog:** añade un `.mdx` en `src/content/blog/` con `title`, `description`, `date`,
-  `lang` (`es` o `en`) y `draft`. Mira `plantilla.mdx`.
-- **Dominio:** cámbialo en la constante `SITE` de `astro.config.mjs`. Lo usan el sitemap,
-  las URLs canónicas, hreflang y el JSON-LD.
-- **CV:** `public/cv-carolina-rodriguez.pdf`.
+- **Foto:** sustituye `src/assets/me.jpg` (retrato vertical 4:5). Ahora hay una foto provisional.
+- **CV:** `public/cv-alejandro-hernandez.pdf` (cambia también la ruta en `Header.astro` y `Hero.astro`).
+- **Imagen social:** `public/og.jpg` (1200×630).
+- **Dominio:** cámbialo en la constante `SITE` de `astro.config.mjs`. Ahora es un marcador
+  (`alejandrohernandez.example`). Lo usan el sitemap, las URLs canónicas, hreflang y el JSON-LD.
+- **Contacto y redes:** `contact` en los diccionarios, y el enlace de LinkedIn en `Footer.astro` y `Layout.astro`.
 
 ## Despliegue
 
@@ -56,5 +56,5 @@ de pnpm en `package.json` porque versiones posteriores rompen el build.
 ## Créditos y licencia
 
 El repositorio nació a partir de la plantilla de [midudev](https://github.com/midudev).
-El diseño y el código actuales están reescritos, pero se mantiene la licencia original,
-[CC BY-NC 4.0](LICENSE.md): puedes inspirarte y reutilizar con atribución, sin uso comercial.
+Se mantiene la licencia original, [CC BY-NC 4.0](LICENSE.md): puedes inspirarte y reutilizar
+con atribución, sin uso comercial.

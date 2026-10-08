@@ -6,8 +6,8 @@ const home = path(lang, '/')
 const links = [
   { t: d.nav.about, h: `${home}#sobre-mi` },
   { t: d.nav.experience, h: `${home}#experiencia` },
-  { t: d.nav.work, h: `${home}#proyectos` },
-  { t: d.nav.blog, h: path(lang, '/blog/') },
+  { t: d.nav.works, h: `${home}#obras` },
+  { t: d.nav.education, h: `${home}#formacion` },
 ]
 const other: Lang = lang === 'es' ? 'en' : 'es'
 ---
@@ -15,14 +15,14 @@ const other: Lang = lang === 'es' ? 'en' : 'es'
 <header class="sticky top-0 z-50 border-b border-riel/70 bg-noche/80 backdrop-blur-md">
   <div class="wrap flex h-14 items-center justify-between gap-6">
     <a href={home} class="flex items-center gap-2 font-semibold tracking-tight">
-      <span class="station" aria-hidden="true" style="border-color:#f2a33a"></span>
-      Carolina Rodríguez
+      <span class="station" aria-hidden="true" style="border-color:#f5b50a"></span>
+      Alejandro Hernández
     </a>
     <nav aria-label={d.a11y.menu} class="flex items-center gap-5 text-sm md:gap-7">
       <ul class="hidden items-center gap-7 md:flex">
         {links.map(l => <li><a href={l.h} class="text-niebla transition-colors duration-150 hover:text-papel">{l.t}</a></li>)}
       </ul>
-      <a href="/cv-carolina-rodriguez.pdf" download class="hidden text-niebla transition-colors hover:text-papel sm:inline">{d.nav.cv}</a>
+      <a href="/cv-alejandro-hernandez.pdf" download class="hidden text-niebla transition-colors hover:text-papel sm:inline">{d.nav.cv}</a>
       <a
         href={path(other, route)}
         hreflang={other}

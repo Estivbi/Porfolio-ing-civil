@@ -1,288 +1,300 @@
 {
-  "_review": "PENDIENTE DE REVISIÓN: traducción al inglés sin revisar por la autora. Sencilla y clara a propósito.",
+  "_review": "PENDIENTE DE REVISIÓN: traducción al inglés sin revisar.",
   "meta": {
-    "title": "Carolina Rodríguez · Full Stack Developer & AI Engineer",
-    "description": "Full stack developer and AI engineer based in Madrid. Interfaces, APIs, data, deployment and autonomous agents that reach production."
+    "title": "Alejandro Hernández Fernández · Civil Engineer (Roads, Canals and Ports)",
+    "description": "Civil engineer (Ingeniero de Caminos, Canales y Puertos) in Madrid, specialised in site management, cost control and the water cycle. From feasibility study to handover."
   },
   "a11y": {
     "skip": "Skip to content",
     "menu": "Main",
-    "lang": "Change language"
+    "lang": "Change language",
+    "craneScene": "3D illustration of a tower crane with the professional badge hanging from its hook"
   },
   "nav": {
     "about": "About",
     "experience": "Experience",
-    "work": "Work",
-    "blog": "Blog",
+    "works": "Projects",
+    "education": "Education",
     "contact": "Contact",
-    "cv": "Résumé"
+    "cv": "CV"
   },
   "hero": {
-    "name1": "Carolina",
-    "name2": "Rodríguez",
-    "role": "Full Stack Developer & AI Engineer",
-    "intro": "I build software that reaches production: from the interface to deployment, plus AI agents when they really help.",
+    "name1": "Alejandro",
+    "name2": "Hernández",
+    "name3": "Fernández",
+    "role": "Civil Engineer (Roads, Canals and Ports)",
+    "intro": "I run construction projects and keep their costs under control, from the feasibility study to handover. My specialty is the water cycle and data is my tool.",
     "cta": "Get in touch",
-    "cv": "Download résumé",
+    "cv": "Download CV",
     "sheet": {
       "name": "Name",
       "role": "Role",
-      "base": "Based",
-      "stop": "Next stop",
+      "base": "Base",
+      "focus": "Specialty",
       "baseValue": "Madrid, Spain",
-      "stopValue": "your project"
+      "focusValue": "Water cycle"
     },
-    "mapLabel": "Map of one request, end to end",
-    "mapHint": "Tap a station to see what I do there.",
+    "mapLabel": "The phases of a construction project, start to finish",
+    "mapHint": "Tap a phase to see what I do in it.",
     "stations": [
       {
-        "name": "Idea",
-        "text": "I understand the problem to solve before I open the editor.",
-        "tech": "Jira, Confluence, Figma"
+        "name": "Study",
+        "text": "Technical and economic feasibility study before any earth is moved.",
+        "tech": "Feasibility, quantities, budget"
       },
       {
-        "name": "Interface",
-        "text": "Careful frontend work, from the Figma design to a fast website.",
-        "tech": "React, Next.js, Astro, Tailwind"
+        "name": "Planning",
+        "text": "Short and medium-term planning, with deadlines and milestones that can be tracked.",
+        "tech": "Scheduling, milestones, team coordination"
       },
       {
-        "name": "API",
-        "text": "Backends and documented REST APIs, with a well-thought database.",
-        "tech": "Python, FastAPI, Node.js, PostgreSQL, SQL"
+        "name": "Execution",
+        "text": "On-site production and coordination of the trades and subcontractors.",
+        "tech": "Site management, subcontractors, quality"
       },
       {
-        "name": "Agent",
-        "text": "Agents and automations that work on their own and alert you when something fails.",
-        "tech": "LangGraph, LLMs, Celery, Redis"
+        "name": "Control",
+        "text": "Cost and production KPI tracking, variance analysis and certifications.",
+        "tech": "Analytical control, advanced Excel, Python"
       },
       {
-        "name": "Production",
-        "text": "Deployment with containers and CI/CD, with tests before every release.",
-        "tech": "Docker, GitHub Actions, AWS, Linux"
+        "name": "Handover",
+        "text": "Project close-out, documentation and handover to the client.",
+        "tech": "Acceptance, documentation, occupational safety"
       }
     ],
     "badge": {
-      "label": "Full Stack Line",
-      "back": "Madrid · Full Stack · AI Engineer · next stop: your project"
+      "label": "Civil engineering",
+      "back": "Madrid · Civil Engineer · Water cycle · Site management"
     }
   },
-  "stack": {
-    "label": "Technologies I work with"
+  "marquee": {
+    "label": "Areas and tools",
+    "items": [
+      "Site management",
+      "Water cycle",
+      "Wastewater treatment plants",
+      "Sewers and sanitation",
+      "Urban development works",
+      "Planning and scheduling",
+      "Cost control",
+      "Certifications",
+      "Subcontractors",
+      "Quality control",
+      "Occupational safety",
+      "AutoCAD",
+      "Advanced MS Excel",
+      "Python",
+      "Azure AI"
+    ]
   },
   "about": {
-    "title": "A little about me.",
+    "title": "A bit about me.",
     "paragraphs": [
-      "I have always been curious about how things work, and computers were the first thing that hooked me. I started on my own and later made it formal with a Higher Vocational Degree in Cross-platform Application Development at U-tad and a Python bootcamp.",
-      "Since then I have worked in banking, in a tax product and in management software with more than 25 years of history. I like to understand the whole problem before touching code, and I am just as comfortable polishing an interface as setting up deployment.",
-      "With AI I do two different things: I use it to work better, and I build solutions that integrate it, like the agents and automations in my products. The first speeds me up; the second solves problems. Neither replaces knowing engineering."
+      "I am a civil engineer (Ingeniero de Caminos, Canales y Puertos) specialised in integrated infrastructure management and the water cycle. I have worked on site and on design since 2019: wastewater treatment plants, trunk sewers, urban development works and data centres.",
+      "My day to day runs from planning and on-site production to cost control and certifications. I like to keep the numbers clear: follow the deadlines, analyse the variances and make every phase profitable.",
+      "I also work with data. I use Python applied to engineering, advanced Excel and the fundamentals of artificial intelligence and cloud to automate processes and decide with better information."
     ],
-    "photoAlt": "Portrait of Carolina Rodríguez",
+    "photoAlt": "Portrait of Alejandro Hernández Fernández",
     "areasTitle": "What I do every day",
     "areas": [
       {
-        "name": "Web development",
-        "tech": "React, Next.js, Astro, Tailwind"
+        "name": "Site management",
+        "tech": "Integrated management, on-site production, coordination of trades"
       },
       {
-        "name": "Backend",
-        "tech": "Python, FastAPI, Node.js, PostgreSQL, SQL"
+        "name": "Water cycle",
+        "tech": "Wastewater plants, trunk sewers, sanitation networks"
       },
       {
-        "name": "Architecture",
-        "tech": "MVC, REST APIs, Clean Code"
+        "name": "Planning",
+        "tech": "Scheduling, deadlines and milestones, short and medium term"
       },
       {
-        "name": "AI and agents",
-        "tech": "LangGraph, LLMs, automation"
+        "name": "Cost control",
+        "tech": "Costs, variances, certifications, subcontractors"
       },
       {
-        "name": "UX and interfaces",
-        "tech": "Figma, interface design"
+        "name": "Quality and safety",
+        "tech": "Quality control, Occupational Safety Technician (60 h)"
       },
       {
-        "name": "Product",
-        "tech": "Scrum, Agile, Jira"
+        "name": "Data and automation",
+        "tech": "Python, advanced Excel, Azure AI"
       },
       {
-        "name": "DevOps",
-        "tech": "Docker, GitHub Actions, AWS, CI/CD"
+        "name": "Technical software",
+        "tech": "AutoCAD, civil modelling and design environments"
       }
     ]
   },
   "experience": {
     "title": "Where I have been.",
-    "hint": "Open each stop to see what I did there.",
+    "hint": "Open each stage to see what I did there.",
     "items": [
       {
-        "company": "CSS Connection Soft Service",
-        "role": "Lead Frontend and Full Stack Developer",
-        "period": "Jan 2026 – present",
+        "company": "Cadagua",
+        "role": "Execution manager, wastewater plant upgrade works",
+        "period": "Nov 2024 – Aug 2026",
         "points": [
-          "Full modernization of the interface of a DMS with more than 25 years on the market, using JavaScript and Figma design.",
-          "Architecture analysis to renew the corporate portal and leadership of the migration to WordPress to integrate the blog and SEO.",
-          "Led the development from scratch of a RESTful API portal, with endpoints documented in YAML.",
-          "Refactored legacy ColdFusion code to an MVC architecture and optimized SQL queries to cut response times.",
-          "Worked with Jira, version control and technical documentation in Confluence."
+          "Integrated management of the upgrade works at 16 wastewater treatment plants of the Guadarrama Basin Group for Canal de Isabel II, from the technical and economic feasibility study to final execution and handover.",
+          "Definition of the strategic planning of the works and deadline tracking.",
+          "Cost control, variance analysis, subcontractor management and budget supervision to guarantee the profitability of the upgrades."
         ],
-        "tags": [
-          "JavaScript",
-          "REST APIs",
-          "ColdFusion",
-          "SQL",
-          "WordPress",
-          "Figma"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Wastewater plants", "Canal de Isabel II", "Planning", "Cost control"]
       },
       {
-        "company": "Stibios",
-        "role": "Independent product (personal brand)",
-        "period": "ongoing",
+        "company": "ACSA Obras e Infraestructuras",
+        "role": "Production and technical co-management",
+        "period": "Oct 2023 – Nov 2024",
         "points": [
-          "Design and build of my own products, from idea to deployment.",
-          "Stibios Agent Platform: autonomous agents built with LangGraph and Gemini that generate content and leads for several projects and report through Telegram."
+          "Management of on-site production for the upgrade of the Arroyo del Soto wastewater plant to the National Water Quality Plan, with a €14.6M budget for Canal de Isabel II.",
+          "Direct support to the Site Manager in defining construction strategies and technical decisions, plus short and medium-term operational planning and cross-trade coordination.",
+          "Tracking of production KPIs, analysis of budget variances and cost control, producing certifications and status reports."
         ],
-        "tags": [
-          "Python",
-          "LangGraph",
-          "FastAPI",
-          "GitHub Actions"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Wastewater plants", "€14.6M", "KPIs", "Certifications"]
       },
       {
-        "company": "Revista Victoria",
-        "role": "Co-founder and Full Stack Developer",
-        "period": "Apr 2025 – present",
+        "company": "Virtón",
+        "role": "Site Manager and Assistant Site Manager",
+        "period": "Sep 2021 – Oct 2023",
         "points": [
-          "Designed and built from scratch the website of an independent fashion magazine, aligned with its editorial identity.",
-          "SEO-optimized structure and a custom content manager so the editorial team can update the site on their own.",
-          "Ongoing maintenance, visual tweaks and technical support."
+          "Site Manager on the Cocheras Buenavista urban development (Mar–Oct 2023), for PRYCONSA and Madrid City Council: integrated management, analytical cost control on a €1M budget, subcontractor management and monthly certifications.",
+          "Assistant Site Manager on the urban remodelling in Getafe (Dec 2022 – Oct 2023): on-site technical coordination on the access road from the M-406 (Barrio Centro – San Isidro), with €2.4M for Getafe City Council.",
+          "Assistant Site Manager on the Villarrozas trunk sewers (Apr 2022 – Feb 2023): support to technical management and execution control of hydraulic infrastructure and service roads (€1.7M) for Canal de Isabel II.",
+          "Site and Quality Manager on the urban development of the MAD01 and MAD02 data centres for Microsoft (Oct 2021 – Apr 2022): execution and quality control of two simultaneous projects of €2.2M and €9.8M."
         ],
-        "tags": [
-          "Astro",
-          "React",
-          "Sanity",
-          "SEO"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Urban development", "Site Manager", "Quality", "Subcontractors"]
       },
       {
-        "company": "Indra",
-        "role": "Full Stack Developer",
-        "period": "Sep 2025 – 2026",
+        "company": "Inncive",
+        "role": "Projects department",
+        "period": "Sep 2020 – Sep 2021",
         "points": [
-          "Improvements to the frontend (JavaScript) and backend (PHP) of a monitoring system, optimizing interfaces and data loading.",
-          "Automated and functional tests to validate each change before deployment.",
-          "Collaboration in DevOps environments with development, test and production virtual machines."
+          "Technical field support and data collection for the design of hydraulic infrastructure improvement projects, notably the Villanueva de la Cañada wastewater plant and the Yeles sewer network."
         ],
-        "tags": [
-          "JavaScript",
-          "PHP",
-          "Testing",
-          "DevOps"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Projects", "Wastewater plants", "Sanitation"]
       },
       {
-        "company": "Me Asesoran",
-        "role": "Full Stack Developer",
-        "period": "Nov 2023 – Jun 2025",
+        "company": "AVK Válvulas",
+        "role": "Engineering intern, Sales and Studies Department",
+        "period": "Jun 2019 – Aug 2020",
         "points": [
-          "Worked closely with the product team to turn user needs into features.",
-          "Built Me Asesoran Rentas, backend and frontend: integration with the Spanish government API and authentication system, and validation and submission of tax returns by tax advisors."
+          "Preparation of technical studies at national and international level.",
+          "Design and structuring of a new technical product database, optimising the specifications to create a more intuitive and efficient query tool."
         ],
-        "tags": [
-          "Next.js",
-          "React Native",
-          "Tailwind",
-          "AEAT API"
-        ],
-        "image": "",
-        "imageAlt": ""
+        "tags": ["Technical studies", "Databases", "Valves"]
       }
     ]
   },
-  "work": {
-    "title": "What already works.",
-    "visit": "View live",
-    "pending": "Screenshot pending",
+  "works": {
+    "title": "Projects I have worked on.",
+    "intro": "Budgets of the projects I have managed or served as assistant site manager on.",
+    "clientLabel": "Client",
+    "roleLabel": "My role",
     "items": [
       {
-        "name": "MadRing Guide",
-        "url": "https://f1madrid.stibios.com",
-        "text": "A PWA to follow the Spanish F1 Grand Prix at the MADRING circuit in Madrid, with the week's schedule, transport, circuit zones and live timing. It draws the cars' positions in real time on a track generated from the telemetry itself, with no per-circuit illustration.",
-        "tags": [
-          "Next.js",
-          "React",
-          "TypeScript",
-          "Supabase",
-          "Serwist (PWA)",
-          "Framer Motion",
-          "Tailwind",
-          "Vercel",
-          "OpenF1",
-          "GitHub Actions"
-        ],
-        "image": "madring-inicio.png",
-        "imageAlt": "MadRing Guide home screen: countdown and shortcuts to schedule, zones, transport and F1 data.",
-        "role": "Product, design, frontend, backend, database, deployment and SEO.",
-        "period": "August – September 2026. Launched at the GP on 11–13 September.",
-        "points": [
-          "A proxy with a 25 s cache, single-flight and staggered requests keeps within the OpenF1 rate limits however much traffic there is.",
-          "The schedule is rendered on the server so search engines and AI assistants can read it without running JavaScript."
-        ]
+        "name": "Arroyo del Soto wastewater plant",
+        "figure": "€14.6M",
+        "client": "Canal de Isabel II",
+        "role": "On-site production and technical co-management",
+        "period": "2023 – 2024",
+        "text": "Upgrade of the plant to the National Water Quality Plan."
       },
       {
-        "name": "Stibios Agent Platform",
-        "url": "",
-        "text": "A platform of autonomous AI agents, running 24/7, that generate content, analyze trends and qualify leads for several projects: Revista Victoria, MadRing and Blog Stibios. It orchestrates LangGraph graphs with Gemini 2.5, publishes to Sanity and Supabase and reports through Telegram with no human intervention.",
-        "tags": [
-          "Python",
-          "LangGraph",
-          "Gemini 2.5",
-          "FastAPI",
-          "Celery",
-          "Redis",
-          "Supabase",
-          "Sanity",
-          "GitHub Actions",
-          "Telegram"
-        ],
-        "image": "stibios-panel.png",
-        "imageAlt": "Stibios Agents dashboard: a status card for each agent and a table of the latest runs.",
-        "role": "Full stack developer and architect: complete design of the platform, all the agents and the infrastructure.",
-        "period": "May 2026 – present. Private repository.",
-        "points": [
-          "Eight agents are in production: news, dev briefing, blogs (Stibios, Victoria and Pádel), leads, trends and the MadRing scraper.",
-          "They run on GitHub Actions, with cron and manual runs, with no server of my own."
-        ]
+        "name": "Data Centres MAD01 and MAD02",
+        "figure": "€9.8M and €2.2M",
+        "client": "Microsoft",
+        "role": "Site and Quality Manager",
+        "period": "2021 – 2022",
+        "text": "Urban development of two simultaneous projects, with operational and documentation management."
+      },
+      {
+        "name": "Urban remodelling in Getafe",
+        "figure": "€2.4M",
+        "client": "Getafe City Council",
+        "role": "Assistant Site Manager",
+        "period": "2022 – 2023",
+        "text": "Remodelling of the access road from the M-406, between Barrio Centro and San Isidro."
+      },
+      {
+        "name": "Villarrozas trunk sewers",
+        "figure": "€1.7M",
+        "client": "Canal de Isabel II",
+        "role": "Assistant Site Manager",
+        "period": "2022 – 2023",
+        "text": "Hydraulic infrastructure and service roads."
+      },
+      {
+        "name": "Cocheras Buenavista urban development",
+        "figure": "€1M",
+        "client": "PRYCONSA and Madrid City Council",
+        "role": "Site Manager",
+        "period": "2023",
+        "text": "Integrated management of the urban development, with analytical cost control and monthly certifications."
+      },
+      {
+        "name": "Upgrade of 16 wastewater plants, Guadarrama Basin Group",
+        "figure": "16 plants",
+        "client": "Canal de Isabel II",
+        "role": "Execution manager",
+        "period": "2024 – 2026",
+        "text": "Integrated management of the upgrade works, from the feasibility study to handover."
+      }
+    ]
+  },
+  "education": {
+    "title": "Education.",
+    "degreesTitle": "Degrees",
+    "certsTitle": "Certifications and languages",
+    "degrees": [
+      {
+        "name": "Master's Degree in Civil Engineering (Roads, Canals and Ports)",
+        "place": "Universidad Europea de Madrid",
+        "period": "2022 – 2024"
+      },
+      {
+        "name": "Bachelor's Degree in Civil Engineering, specialty in Civil Construction and Hydrology",
+        "place": "Universidad Politécnica de Madrid",
+        "period": "2014 – 2021"
       }
     ],
-    "intro": "These are my own projects: I design, build and maintain them end to end.",
-    "private": "Private repository"
+    "certs": [
+      {
+        "name": "Artificial Intelligence Fundamentals (AI-900)",
+        "place": "Microsoft Azure",
+        "period": "2026"
+      },
+      {
+        "name": "Data Science and Python Programming",
+        "place": "DataCamp",
+        "period": "2026"
+      },
+      {
+        "name": "Occupational Risk Prevention Technician",
+        "place": "60 hours",
+        "period": ""
+      },
+      {
+        "name": "English",
+        "place": "Level B2",
+        "period": ""
+      }
+    ]
   },
   "contact": {
-    "title": "Next stop: your project.",
-    "text": "Tell me what you want to build or fix and we will see where to start.",
-    "email": "carolinarb1994@gmail.com",
+    "title": "Let's talk about your project.",
+    "text": "If you have a project or an opportunity where I can contribute, write to me.",
+    "email": "alejandro.hfernandez95@gmail.com",
+    "phone": "+34 680 36 30 36",
+    "phoneHref": "+34680363036",
     "copy": "Copy email",
-    "copied": "Copied. Have a good trip.",
+    "copied": "Copied.",
     "copyFail": "Could not copy. Select it and copy it by hand."
   },
   "footer": {
-    "made": "Made in Madrid, without rush and without templates.",
-    "top": "Back to the start",
-    "rights": "Carolina Rodríguez"
-  },
-  "blog": {
-    "title": "Logbook.",
-    "intro": "Notes on development, agents and product. There are no posts yet, but they are coming.",
-    "empty": "No posts yet.",
-    "back": "Back home"
+    "made": "Madrid · Civil engineering.",
+    "top": "Back to top",
+    "rights": "Alejandro Hernández Fernández"
   }
 }
