@@ -1,0 +1,80 @@
+---
+// Franja de carretera decorativa: el camión avanza según el scroll y sus ruedas giran.
+---
+
+<div class="road" data-road aria-hidden="true">
+  <div class="asphalt"><span class="dashes" data-dashes></span></div>
+  <svg class="truck" data-truck viewBox="0 0 220 100" focusable="false">
+    <!-- chasis -->
+    <rect x="14" y="62" width="196" height="8" rx="2" fill="#2a2f38" />
+    <!-- caja volquete -->
+    <path d="M14 28 H118 L130 62 H14 Z" fill="#f5b50a" />
+    <path d="M30 32 V60 M50 32 V60 M70 32 V60 M90 32 V60 M110 32 L118 60" stroke="#c98f00" stroke-width="2.5" fill="none" />
+    <rect x="14" y="26" width="106" height="5" rx="1.5" fill="#d9a000" />
+    <!-- cabina -->
+    <path d="M134 62 V36 L154 28 H178 L190 44 L202 48 V62 Z" fill="#f5b50a" />
+    <path d="M158 33 H176 L185 45 H158 Z" fill="#142234" />
+    <rect x="135" y="12" width="3.5" height="26" fill="#2a2f38" />
+    <rect x="200" y="52" width="4" height="6" rx="1" fill="#fff2c0" />
+    <rect x="196" y="62" width="14" height="5" rx="1.5" fill="#2a2f38" />
+    <!-- ruedas -->
+    {[48, 80, 176].map(cx => (
+      <g data-wheel transform={`translate(${cx} 76)`}>
+        <circle r="13" fill="#0a0c10" />
+        <g data-spin>
+          <circle r="7" fill="#9aa3b2" />
+          <path d="M0 -6 V6 M-6 0 H6 M-4.2 -4.2 L4.2 4.2 M-4.2 4.2 L4.2 -4.2" stroke="#2a2f38" stroke-width="1.6" />
+          <circle r="2" fill="#2a2f38" />
+        </g>
+      </g>
+    ))}
+  </svg>
+</div>
+
+<style>
+  .road { position: relative; height: 7.25rem; overflow: hidden; border-block: 1px solid #262c37; background: linear-gradient(#0a0c10, #0d1015); }
+  .asphalt { position: absolute; left: 0; right: 0; bottom: 0; height: 2.1rem; background: #12161d; border-top: 1px solid #262c37; }
+  .dashes {
+    position: absolute; left: 0; right: 0; top: 50%; height: 3px; margin-top: -1.5px;
+    background: repeating-linear-gradient(to right, #9aa3b2 0 1.6rem, transparent 1.6rem 3.4rem); opacity: .55;
+    background-position-x: var(--dash, 0px);
+  }
+  .truck { position: absolute; left: 0; bottom: 1.1rem; width: 14rem; height: auto; will-change: transform; transform: translateX(var(--x, 12%)); }
+  @media (max-width: 767px) { .road { height: 6rem; } .truck { width: 10rem; bottom: 1rem; } .asphalt { height: 1.8rem; } }
+</style>
+
+<script>
+  function init() {
+    document.querySelectorAll<HTMLElement>('[data-road]').forEach(road => {
+      if (road.dataset.ready) return
+      road.dataset.ready = '1'
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
+      const truck = road.querySelector<SVGElement>('[data-truck]')!
+      const dashes = road.querySelector<HTMLElement>('[data-dashes]')!
+      const spins = [...road.querySelectorAll<SVGGElement>('[data-spin]')]
+      let raf = 0
+      let visible = false
+
+      const update = () => {
+        raf = 0
+        const r = road.getBoundingClientRect()
+        const vh = window.innerHeight
+        // 0 cuando la franja asoma por abajo, 1 cuando sale por arriba
+        const p = Math.min(1, Math.max(0, (vh - r.top) / (vh + r.height)))
+        const travel = Math.max(0, r.width - truck.getBoundingClientRect().width)
+        const x = travel * p
+        truck.style.setProperty('--x', `${x}px`)
+        dashes.style.setProperty('--dash', `${-x * 0.6}px`)
+        const rot = (x / 13) * (180 / Math.PI) // distancia recorrida / radio de rueda
+        spins.forEach(s => s.setAttribute('transform', `rotate(${rot.toFixed(1)})`))
+      }
+      const request = () => { if (visible && !raf) raf = requestAnimationFrame(update) }
+
+      new IntersectionObserver(([en]) => { visible = en.isIntersecting; request() }, { rootMargin: '10% 0px' }).observe(road)
+      window.addEventListener('scroll', request, { passive: true })
+      window.addEventListener('resize', request)
+      update()
+    })
+  }
+  document.addEventListener('astro:page-load', init)
+</script>

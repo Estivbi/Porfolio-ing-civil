@@ -6,6 +6,7 @@ import About from './About.astro'
 import Experience from './Experience.astro'
 import Works from './Works.astro'
 import Education from './Education.astro'
+import Road from './Road.astro'
 import Contact from './Contact.astro'
 import type { Lang } from '../i18n'
 const { lang } = Astro.props as { lang: Lang }
@@ -15,8 +16,10 @@ const { lang } = Astro.props as { lang: Lang }
   <Hero lang={lang} />
   <Marquee lang={lang} />
   <About lang={lang} />
+  <Road />
   <Works lang={lang} />
   <Experience lang={lang} />
   <Education lang={lang} />
+  <Road />
   <Contact lang={lang} />
 </Layout>
