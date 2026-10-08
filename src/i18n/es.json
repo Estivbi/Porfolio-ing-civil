@@ -1,8 +1,8 @@
 {
   "_review": "Idioma principal.",
   "meta": {
-    "title": "Alejandro Hernández Fernández · Ingeniero de Caminos, Canales y Puertos",
-    "description": "Ingeniero de Caminos, Canales y Puertos en Madrid, especializado en gestión de obra, control económico y ciclo del agua. Del estudio previo a la entrega."
+    "title": "Alejandro Hernández Fernández · Ingeniero de Caminos y analista de datos",
+    "description": "Ingeniero de Caminos, Canales y Puertos en Madrid con perfil de análisis de datos: control de costes, KPIs, Python y automatización aplicados a infraestructuras y ciclo del agua."
   },
   "a11y": {
     "skip": "Saltar al contenido",
@@ -22,8 +22,8 @@
     "name1": "Alejandro",
     "name2": "Hernández",
     "name3": "Fernández",
-    "role": "Ingeniero de Caminos, Canales y Puertos",
-    "intro": "Dirijo obras y controlo su coste, del estudio previo a la entrega. Mi especialidad es el ciclo del agua y los datos son mi herramienta.",
+    "role": "Ingeniero de Caminos · Análisis de datos",
+    "intro": "Ingeniero de Caminos con perfil de datos. Analizo costes y KPIs de producción, automatizo procesos con Python y apoyo la toma de decisiones en infraestructuras.",
     "cta": "Hablemos",
     "cv": "Descargar CV",
     "sheet": {
@@ -32,95 +32,100 @@
       "base": "Base",
       "focus": "Especialidad",
       "baseValue": "Madrid, España",
-      "focusValue": "Ciclo del agua"
+      "focusValue": "Análisis de datos"
     },
-    "mapLabel": "Las fases de una obra, de principio a fin",
+    "mapLabel": "Del dato a la decisión",
     "mapHint": "Toca una fase para ver qué hago en ella.",
     "stations": [
       {
-        "name": "Estudio",
-        "text": "Estudio previo técnico-económico y de viabilidad antes de mover tierra.",
-        "tech": "Viabilidad, mediciones, presupuesto"
+        "name": "Datos",
+        "text": "Recojo y ordeno los datos de campo, de producción y de costes de cada proyecto.",
+        "tech": "Datos de campo, mediciones, bases de datos"
       },
       {
-        "name": "Planificación",
-        "text": "Planificación a corto y medio plazo, con plazos e hitos que se pueden seguir.",
-        "tech": "Scheduling, hitos, coordinación de equipos"
-      },
-      {
-        "name": "Ejecución",
-        "text": "Producción a pie de obra y coordinación de las disciplinas y las subcontratas.",
-        "tech": "Dirección de obra, subcontratas, calidad"
+        "name": "Análisis",
+        "text": "Análisis de datos operativos y de producción con Python y Excel avanzado.",
+        "tech": "Python, Excel avanzado, KPIs"
       },
       {
         "name": "Control",
-        "text": "Seguimiento de costes y KPIs de producción, análisis de desviaciones y certificaciones.",
-        "tech": "Control analítico, Excel avanzado, Python"
+        "text": "Seguimiento de costes y análisis de las desviaciones presupuestarias.",
+        "tech": "Control analítico de costes, desviaciones"
       },
       {
-        "name": "Entrega",
-        "text": "Cierre de la obra, documentación y entrega al cliente.",
-        "tech": "Recepción, documentación, PRL"
+        "name": "Automatización",
+        "text": "Automatizo procesos repetitivos para ganar eficiencia operativa.",
+        "tech": "Python, automatización de procesos"
+      },
+      {
+        "name": "Decisión",
+        "text": "Informes y certificaciones que ayudan a decidir sobre plazos, costes y planificación.",
+        "tech": "Reportes de estado, certificaciones, planificación"
       }
     ],
     "badge": {
-      "label": "Ingeniería civil",
-      "back": "Madrid · Ingeniero de Caminos · Ciclo del agua · Gestión de obra"
+      "label": "Ingeniero de Caminos y datos",
+      "back": "Madrid · Ingeniero de Caminos · Análisis de datos · Infraestructuras"
     }
   },
   "marquee": {
     "label": "Áreas y herramientas",
     "items": [
-      "Gestión de obra",
+      "Análisis de datos",
+      "Python",
+      "MS Excel avanzado",
+      "KPIs de producción",
+      "Control de costes",
+      "Automatización de procesos",
+      "Azure IA",
       "Ciclo del agua",
       "EDAR",
-      "Colectores y saneamiento",
-      "Urbanización",
+      "Gestión de obra",
       "Planificación y scheduling",
-      "Control de costes",
       "Certificaciones",
       "Subcontratas",
       "Control de calidad",
       "PRL",
-      "AutoCAD",
-      "MS Excel avanzado",
-      "Python",
-      "Azure IA"
+      "AutoCAD"
     ]
   },
   "about": {
     "title": "Un poco de mí.",
     "paragraphs": [
-      "Soy Ingeniero de Caminos, Canales y Puertos y me especializo en la gestión integral de infraestructuras y en el ciclo del agua. Trabajo en obra y en proyecto desde 2019: estaciones depuradoras, colectores, urbanizaciones y centros de datos.",
-      "Mi día a día va de la planificación y la producción a pie de obra al control de costes y las certificaciones. Me gusta tener los números claros: seguir los plazos, analizar las desviaciones y que cada fase sea rentable.",
-      "También trabajo con datos. Uso Python aplicado a ingeniería, Excel avanzado y fundamentos de inteligencia artificial y cloud para automatizar procesos y decidir con mejor información."
+      "Soy Ingeniero de Caminos, Canales y Puertos con un perfil técnico orientado al análisis de datos y la automatización de procesos. Aplico la tecnología para mejorar la eficiencia operativa y la toma de decisiones en el sector de las infraestructuras.",
+      "Uso Python aplicado a ingeniería, Excel avanzado y fundamentos de inteligencia artificial y cloud con Microsoft Azure para analizar datos operativos, controlar costes y automatizar tareas.",
+      "Lo hago desde dentro. Trabajo en obra y en proyecto desde 2019, con experiencia en producción, planificación y control presupuestario en estaciones depuradoras, colectores, urbanizaciones y centros de datos."
     ],
     "photoAlt": "Retrato de Alejandro Hernández Fernández",
     "areasTitle": "Lo que hago a diario",
     "areas": [
       {
-        "name": "Gestión de obra",
-        "tech": "Dirección integral, producción a pie de obra, coordinación de disciplinas"
+        "name": "Análisis de datos",
+        "tech": "Datos operativos, KPIs de producción, Python, Excel avanzado"
+      },
+      {
+        "name": "Control económico",
+        "tech": "Costes, desviaciones presupuestarias, certificaciones"
+      },
+      {
+        "name": "Automatización",
+        "tech": "Python, automatización de procesos, bases de datos"
       },
       {
         "name": "Ciclo del agua",
         "tech": "EDAR, colectores emisarios, redes de saneamiento"
       },
       {
+        "name": "Gestión de obra",
+        "tech": "Dirección integral, producción a pie de obra, subcontratas"
+      },
+      {
         "name": "Planificación",
         "tech": "Scheduling, plazos e hitos, corto y medio plazo"
       },
       {
-        "name": "Control económico",
-        "tech": "Costes, desviaciones, certificaciones, subcontratas"
-      },
-      {
         "name": "Calidad y prevención",
         "tech": "Control de calidad, Técnico en PRL (60 h)"
-      },
-      {
-        "name": "Datos y automatización",
-        "tech": "Python, Excel avanzado, Azure IA"
       },
       {
         "name": "Software técnico",
@@ -141,7 +146,12 @@
           "Definición de la planificación estratégica de los trabajos y seguimiento de plazos.",
           "Control de costes, análisis de desviaciones, gestión de subcontratas y supervisión del presupuesto para garantizar la rentabilidad de las mejoras."
         ],
-        "tags": ["EDAR", "Canal de Isabel II", "Planificación", "Control de costes"]
+        "tags": [
+          "EDAR",
+          "Canal de Isabel II",
+          "Planificación",
+          "Control de costes"
+        ]
       },
       {
         "company": "ACSA Obras e Infraestructuras",
@@ -152,7 +162,12 @@
           "Apoyo directo al Jefe de Obra en la definición de estrategias constructivas y decisiones técnicas, y planificación operativa a corto y medio plazo con coordinación transversal de las disciplinas.",
           "Seguimiento de KPIs de producción, análisis de desviaciones presupuestarias y control de costes, con elaboración de certificaciones e informes de estado."
         ],
-        "tags": ["EDAR", "14,6 M€", "KPIs", "Certificaciones"]
+        "tags": [
+          "EDAR",
+          "14,6 M€",
+          "KPIs",
+          "Certificaciones"
+        ]
       },
       {
         "company": "Virtón",
@@ -164,7 +179,12 @@
           "Adjunto a Jefe de Obra en los colectores emisarios de Villarrozas (abr. 2022 – feb. 2023): apoyo a la dirección técnica y control de ejecución de infraestructuras hidráulicas y caminos de servicio (1,7 M€) para el Canal de Isabel II.",
           "Jefe de Obra y Calidad en la urbanización de los Data Centers MAD01 y MAD02 para Microsoft (oct. 2021 – abr. 2022): ejecución y control de calidad de dos proyectos simultáneos de 2,2 M€ y 9,8 M€."
         ],
-        "tags": ["Urbanización", "Jefe de Obra", "Calidad", "Subcontratas"]
+        "tags": [
+          "Urbanización",
+          "Jefe de Obra",
+          "Calidad",
+          "Subcontratas"
+        ]
       },
       {
         "company": "Inncive",
@@ -173,7 +193,11 @@
         "points": [
           "Apoyo técnico en campo y recopilación de datos para el diseño de proyectos de mejora de infraestructuras hidráulicas, en especial la EDAR de Villanueva de la Cañada y la red de saneamiento de Yeles."
         ],
-        "tags": ["Proyectos", "EDAR", "Saneamiento"]
+        "tags": [
+          "Proyectos",
+          "EDAR",
+          "Saneamiento"
+        ]
       },
       {
         "company": "AVK Válvulas",
@@ -183,7 +207,11 @@
           "Elaboración de estudios técnicos a nivel nacional e internacional.",
           "Diseño y estructuración de una nueva base de datos de productos técnicos, optimizando las especificaciones para crear una herramienta de consulta más intuitiva y eficiente."
         ],
-        "tags": ["Estudios técnicos", "Bases de datos", "Válvulas"]
+        "tags": [
+          "Estudios técnicos",
+          "Bases de datos",
+          "Válvulas"
+        ]
       }
     ]
   },
@@ -283,17 +311,15 @@
     ]
   },
   "contact": {
-    "title": "Hablemos de tu obra.",
-    "text": "Si tienes una obra, un proyecto o una oportunidad en la que pueda aportar, escríbeme.",
+    "title": "Hablemos de tu proyecto.",
+    "text": "Si tienes una infraestructura, un proyecto o un reto de datos en el que pueda aportar, escríbeme.",
     "email": "alejandro.hfernandez95@gmail.com",
-    "phone": "+34 680 36 30 36",
-    "phoneHref": "+34680363036",
     "copy": "Copiar email",
     "copied": "Copiado.",
     "copyFail": "No se pudo copiar. Selecciónalo y cópialo a mano."
   },
   "footer": {
-    "made": "Madrid · Ingeniería civil.",
+    "made": "Madrid · Ingeniero de Caminos.",
     "top": "Volver arriba",
     "rights": "Alejandro Hernández Fernández"
   }

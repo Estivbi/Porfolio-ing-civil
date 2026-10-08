@@ -1,8 +1,8 @@
 {
   "_review": "PENDIENTE DE REVISIÓN: traducción al inglés sin revisar.",
   "meta": {
-    "title": "Alejandro Hernández Fernández · Civil Engineer (Roads, Canals and Ports)",
-    "description": "Civil engineer (Ingeniero de Caminos, Canales y Puertos) in Madrid, specialised in site management, cost control and the water cycle. From feasibility study to handover."
+    "title": "Alejandro Hernández Fernández · Ingeniero de Caminos and Data Analyst",
+    "description": "Ingeniero de Caminos, Canales y Puertos in Madrid with a data analysis profile: cost control, KPIs, Python and automation applied to infrastructure and the water cycle."
   },
   "a11y": {
     "skip": "Skip to content",
@@ -22,8 +22,8 @@
     "name1": "Alejandro",
     "name2": "Hernández",
     "name3": "Fernández",
-    "role": "Civil Engineer (Roads, Canals and Ports)",
-    "intro": "I run construction projects and keep their costs under control, from the feasibility study to handover. My specialty is the water cycle and data is my tool.",
+    "role": "Ingeniero de Caminos · Data Analysis",
+    "intro": "Ingeniero de Caminos with a data profile. I analyse costs and production KPIs, automate processes with Python and support decision-making in infrastructure.",
     "cta": "Get in touch",
     "cv": "Download CV",
     "sheet": {
@@ -32,95 +32,100 @@
       "base": "Base",
       "focus": "Specialty",
       "baseValue": "Madrid, Spain",
-      "focusValue": "Water cycle"
+      "focusValue": "Data analysis"
     },
-    "mapLabel": "The phases of a construction project, start to finish",
+    "mapLabel": "From data to decision",
     "mapHint": "Tap a phase to see what I do in it.",
     "stations": [
       {
-        "name": "Study",
-        "text": "Technical and economic feasibility study before any earth is moved.",
-        "tech": "Feasibility, quantities, budget"
+        "name": "Data",
+        "text": "I collect and organise the field, production and cost data of each project.",
+        "tech": "Field data, quantities, databases"
       },
       {
-        "name": "Planning",
-        "text": "Short and medium-term planning, with deadlines and milestones that can be tracked.",
-        "tech": "Scheduling, milestones, team coordination"
-      },
-      {
-        "name": "Execution",
-        "text": "On-site production and coordination of the trades and subcontractors.",
-        "tech": "Site management, subcontractors, quality"
+        "name": "Analysis",
+        "text": "Analysis of operational and production data with Python and advanced Excel.",
+        "tech": "Python, advanced Excel, KPIs"
       },
       {
         "name": "Control",
-        "text": "Cost and production KPI tracking, variance analysis and certifications.",
-        "tech": "Analytical control, advanced Excel, Python"
+        "text": "Cost tracking and analysis of budget variances.",
+        "tech": "Analytical cost control, variances"
       },
       {
-        "name": "Handover",
-        "text": "Project close-out, documentation and handover to the client.",
-        "tech": "Acceptance, documentation, occupational safety"
+        "name": "Automation",
+        "text": "I automate repetitive processes to gain operational efficiency.",
+        "tech": "Python, process automation"
+      },
+      {
+        "name": "Decision",
+        "text": "Reports and certifications that help decide on deadlines, costs and planning.",
+        "tech": "Status reports, certifications, planning"
       }
     ],
     "badge": {
-      "label": "Civil engineering",
-      "back": "Madrid · Civil Engineer · Water cycle · Site management"
+      "label": "Ingeniero de Caminos and data",
+      "back": "Madrid · Ingeniero de Caminos · Data analysis · Infrastructure"
     }
   },
   "marquee": {
     "label": "Areas and tools",
     "items": [
-      "Site management",
-      "Water cycle",
-      "Wastewater treatment plants",
-      "Sewers and sanitation",
-      "Urban development works",
-      "Planning and scheduling",
+      "Data analysis",
+      "Python",
+      "Advanced MS Excel",
+      "Production KPIs",
       "Cost control",
+      "Process automation",
+      "Azure AI",
+      "Water cycle",
+      "Wastewater plants",
+      "Site management",
+      "Planning and scheduling",
       "Certifications",
       "Subcontractors",
       "Quality control",
       "Occupational safety",
-      "AutoCAD",
-      "Advanced MS Excel",
-      "Python",
-      "Azure AI"
+      "AutoCAD"
     ]
   },
   "about": {
     "title": "A bit about me.",
     "paragraphs": [
-      "I am a civil engineer (Ingeniero de Caminos, Canales y Puertos) specialised in integrated infrastructure management and the water cycle. I have worked on site and on design since 2019: wastewater treatment plants, trunk sewers, urban development works and data centres.",
-      "My day to day runs from planning and on-site production to cost control and certifications. I like to keep the numbers clear: follow the deadlines, analyse the variances and make every phase profitable.",
-      "I also work with data. I use Python applied to engineering, advanced Excel and the fundamentals of artificial intelligence and cloud to automate processes and decide with better information."
+      "I am an Ingeniero de Caminos, Canales y Puertos with a technical profile geared towards data analysis and process automation. I apply technology to improve operational efficiency and decision-making in the infrastructure sector.",
+      "I use Python applied to engineering, advanced Excel and the fundamentals of artificial intelligence and cloud with Microsoft Azure to analyse operational data, control costs and automate tasks.",
+      "I do it from the inside. I have worked on site and on design since 2019, with experience in production, planning and budget control on wastewater treatment plants, trunk sewers, urban development works and data centres."
     ],
     "photoAlt": "Portrait of Alejandro Hernández Fernández",
     "areasTitle": "What I do every day",
     "areas": [
       {
-        "name": "Site management",
-        "tech": "Integrated management, on-site production, coordination of trades"
+        "name": "Data analysis",
+        "tech": "Operational data, production KPIs, Python, advanced Excel"
+      },
+      {
+        "name": "Cost control",
+        "tech": "Costs, budget variances, certifications"
+      },
+      {
+        "name": "Automation",
+        "tech": "Python, process automation, databases"
       },
       {
         "name": "Water cycle",
         "tech": "Wastewater plants, trunk sewers, sanitation networks"
       },
       {
+        "name": "Site management",
+        "tech": "Integrated management, on-site production, subcontractors"
+      },
+      {
         "name": "Planning",
         "tech": "Scheduling, deadlines and milestones, short and medium term"
       },
       {
-        "name": "Cost control",
-        "tech": "Costs, variances, certifications, subcontractors"
-      },
-      {
         "name": "Quality and safety",
         "tech": "Quality control, Occupational Safety Technician (60 h)"
-      },
-      {
-        "name": "Data and automation",
-        "tech": "Python, advanced Excel, Azure AI"
       },
       {
         "name": "Technical software",
@@ -141,7 +146,12 @@
           "Definition of the strategic planning of the works and deadline tracking.",
           "Cost control, variance analysis, subcontractor management and budget supervision to guarantee the profitability of the upgrades."
         ],
-        "tags": ["Wastewater plants", "Canal de Isabel II", "Planning", "Cost control"]
+        "tags": [
+          "Wastewater plants",
+          "Canal de Isabel II",
+          "Planning",
+          "Cost control"
+        ]
       },
       {
         "company": "ACSA Obras e Infraestructuras",
@@ -152,7 +162,12 @@
           "Direct support to the Site Manager in defining construction strategies and technical decisions, plus short and medium-term operational planning and cross-trade coordination.",
           "Tracking of production KPIs, analysis of budget variances and cost control, producing certifications and status reports."
         ],
-        "tags": ["Wastewater plants", "€14.6M", "KPIs", "Certifications"]
+        "tags": [
+          "Wastewater plants",
+          "€14.6M",
+          "KPIs",
+          "Certifications"
+        ]
       },
       {
         "company": "Virtón",
@@ -164,7 +179,12 @@
           "Assistant Site Manager on the Villarrozas trunk sewers (Apr 2022 – Feb 2023): support to technical management and execution control of hydraulic infrastructure and service roads (€1.7M) for Canal de Isabel II.",
           "Site and Quality Manager on the urban development of the MAD01 and MAD02 data centres for Microsoft (Oct 2021 – Apr 2022): execution and quality control of two simultaneous projects of €2.2M and €9.8M."
         ],
-        "tags": ["Urban development", "Site Manager", "Quality", "Subcontractors"]
+        "tags": [
+          "Urban development",
+          "Site Manager",
+          "Quality",
+          "Subcontractors"
+        ]
       },
       {
         "company": "Inncive",
@@ -173,7 +193,11 @@
         "points": [
           "Technical field support and data collection for the design of hydraulic infrastructure improvement projects, notably the Villanueva de la Cañada wastewater plant and the Yeles sewer network."
         ],
-        "tags": ["Projects", "Wastewater plants", "Sanitation"]
+        "tags": [
+          "Projects",
+          "Wastewater plants",
+          "Sanitation"
+        ]
       },
       {
         "company": "AVK Válvulas",
@@ -183,7 +207,11 @@
           "Preparation of technical studies at national and international level.",
           "Design and structuring of a new technical product database, optimising the specifications to create a more intuitive and efficient query tool."
         ],
-        "tags": ["Technical studies", "Databases", "Valves"]
+        "tags": [
+          "Technical studies",
+          "Databases",
+          "Valves"
+        ]
       }
     ]
   },
@@ -284,16 +312,14 @@
   },
   "contact": {
     "title": "Let's talk about your project.",
-    "text": "If you have a project or an opportunity where I can contribute, write to me.",
+    "text": "If you have an infrastructure, a project or a data challenge where I can contribute, write to me.",
     "email": "alejandro.hfernandez95@gmail.com",
-    "phone": "+34 680 36 30 36",
-    "phoneHref": "+34680363036",
     "copy": "Copy email",
     "copied": "Copied.",
     "copyFail": "Could not copy. Select it and copy it by hand."
   },
   "footer": {
-    "made": "Madrid · Civil engineering.",
+    "made": "Madrid · Ingeniero de Caminos.",
     "top": "Back to top",
     "rights": "Alejandro Hernández Fernández"
   }

@@ -1,7 +1,7 @@
 # Portfolio de Alejandro Hernández Fernández
 
-Portfolio de Alejandro Hernández Fernández, Ingeniero de Caminos, Canales y Puertos en Madrid.
-Está en español (`/`) y en inglés (`/en`). Sirve también como **plantilla de portfolio para ingeniería civil**:
+Portfolio de Alejandro Hernández Fernández, Ingeniero de Caminos, Canales y Puertos en Madrid, con perfil de análisis de datos.
+Está en español (`/`) y en inglés (`/en`). Sirve también como **plantilla de portfolio para ingenieros de caminos**:
 cambiando los textos y la foto, vale para otra persona.
 
 ## Stack
@@ -28,7 +28,7 @@ pnpm preview    # sirve el build
 
 ```
 src/
-  components/   Hero, CraneHero (grúa 3D + credencial), LineMap (fases de obra), About,
+  components/   Hero, CraneHero (grúa 3D + credencial), LineMap (del dato a la decisión), About,
                 Works (obras), Experience, Education, Contact, Header, Footer...
   scripts/      crane.ts: la grúa torre en three.js
   i18n/         es.json, en.json e index.ts con el tipado de los textos
@@ -41,7 +41,7 @@ src/
 
 - **Textos:** todos están en `src/i18n/es.json` y `en.json`. Si el inglés no tiene la misma
   forma que el español, el build falla. La traducción al inglés está pendiente de revisión.
-- **Foto:** sustituye `src/assets/me.jpg` (retrato vertical 4:5). Ahora hay una foto provisional.
+- **Foto:** `src/assets/me.jpg`, retrato vertical 4:5. Si tienes una foto redonda, colócala sobre un fondo del color de la credencial (`#12161d`).
 - **CV:** `public/cv-alejandro-hernandez.pdf` (cambia también la ruta en `Header.astro` y `Hero.astro`).
 - **Imagen social:** `public/og.jpg` (1200×630).
 - **Dominio:** cámbialo en la constante `SITE` de `astro.config.mjs`. Ahora es un marcador
