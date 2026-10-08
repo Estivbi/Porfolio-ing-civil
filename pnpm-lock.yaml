@@ -26,9 +26,6 @@ importers:
       '@fontsource-variable/geist-mono':
         specifier: ^5.3.0
         version: 5.3.0
-      '@fontsource-variable/onest':
-        specifier: 5.0.2
-        version: 5.0.2
       astro:
         specifier: 4.4.5
         version: 4.4.5(typescript@5.3.3)
@@ -497,9 +494,6 @@ packages:
 
   '@fontsource-variable/geist-mono@5.3.0':
     resolution: {integrity: sha512-vBbuwDEo9AkrqADMXOrlAR3DFcJi4/JxeuU43FoiQERnNwsfXNnvxvReZG02cQKmyk4DZkZdBZX3oTDvy2zBAw==}
-
-  '@fontsource-variable/onest@5.0.2':
-    resolution: {integrity: sha512-XsH6q+/OyO0Oba4OB/NkiQu3ON93U2Kx+1YxKpNZMuS+a+WvxipwhO8Und2CC0mLI33xOZzTWUk4wtnsUJzjCQ==}
 
   '@img/colour@1.1.0':
     resolution: {integrity: sha512-Td76q7j57o/tLVdgS746cYARfSyxk8iEfRxewL9h4OMzYhbW4TAcppl0mT4eyqXddh6L/jwoM75mo7ixa/pCeQ==}
@@ -2977,8 +2971,6 @@ snapshots:
   '@fontsource-variable/familjen-grotesk@5.3.0': {}
 
   '@fontsource-variable/geist-mono@5.3.0': {}
-
-  '@fontsource-variable/onest@5.0.2': {}
 
   '@img/colour@1.1.0': {}
 

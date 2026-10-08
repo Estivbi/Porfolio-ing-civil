@@ -13,7 +13,7 @@ cambiando los textos y la foto, vale para otra persona.
 - Imágenes optimizadas con `astro:assets` y `sharp` (webp)
 - Sitemap con hreflang, `robots.txt` y JSON-LD de tipo Person
 
-## Desarrollo
+## Puesta en marcha
 
 Requiere Node 18+ y [pnpm](https://pnpm.io).
 
@@ -48,10 +48,15 @@ src/
   (`alejandrohernandez.example`). Lo usan el sitemap, las URLs canónicas, hreflang y el JSON-LD.
 - **Contacto y redes:** `contact` en los diccionarios, y el enlace de LinkedIn en `Footer.astro` y `Layout.astro`.
 
-## Despliegue
+## Despliegue en Vercel
 
-Es un sitio estático (`dist/`) pensado para Vercel. Fija `sitemap@7.1.1` con un override
-de pnpm en `package.json` porque versiones posteriores rompen el build.
+Es un sitio estático (`dist/`).
+
+1. Importa el repositorio en [Vercel](https://vercel.com/new). Detecta Astro solo.
+2. Comprueba que el comando de build sea `pnpm build` y el directorio de salida `dist`.
+3. Cuando tengas el dominio, cámbialo en `SITE` de `astro.config.mjs` (canonical, hreflang, sitemap y JSON-LD salen de ahí).
+
+`package.json` fija `sitemap@7.1.1` con un override de pnpm porque versiones posteriores rompen el build.
 
 ## Créditos y licencia
 
