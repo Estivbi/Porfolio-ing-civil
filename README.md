@@ -44,8 +44,8 @@ src/
 - **Foto:** `src/assets/me.jpg`, retrato vertical 4:5. Si tienes una foto redonda, colócala sobre un fondo del color de la credencial (`#12161d`).
 - **CV:** `public/cv-alejandro-hernandez.pdf` (cambia también la ruta en `Header.astro` y `Hero.astro`).
 - **Imagen social:** `public/og.jpg` (1200×630).
-- **Dominio:** cámbialo en la constante `SITE` de `astro.config.mjs`. Ahora es un marcador
-  (`alejandrohernandez.example`). Lo usan el sitemap, las URLs canónicas, hreflang y el JSON-LD.
+- **Dominio:** cámbialo en la constante `SITE` de `astro.config.mjs`. Ahora es la URL de Vercel
+  (`alejandrohf.vercel.app`; cámbialo si compras un dominio propio). Lo usan el sitemap, las URLs canónicas, hreflang y el JSON-LD.
 - **Contacto y redes:** `contact` en los diccionarios, y el enlace de LinkedIn en `Footer.astro` y `Layout.astro`.
 
 ## Despliegue en Vercel
