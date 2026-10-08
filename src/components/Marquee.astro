@@ -2,14 +2,10 @@
 import { getDict, type Lang } from '../i18n'
 const { lang } = Astro.props as { lang: Lang }
 const d = getDict(lang)
-const STACK = [
-  'JavaScript', 'TypeScript', 'React', 'Next.js', 'Astro', 'React Native', 'Node.js',
-  'Python', 'FastAPI', 'LangGraph', 'PostgreSQL', 'Supabase', 'Redis', 'Docker',
-  'GitHub Actions', 'AWS', 'Linux', 'Figma',
-]
+const STACK = d.marquee.items
 ---
 
-<section aria-label={d.stack.label} class="border-y border-riel py-5 overflow-hidden">
+<section aria-label={d.marquee.label} class="border-y border-riel py-5 overflow-hidden">
   <div class="track flex w-max">
     {[0, 1].map(n => (
       <ul class="flex shrink-0 items-center" aria-hidden={n === 1 ? 'true' : undefined}>

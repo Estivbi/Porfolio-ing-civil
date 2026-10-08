@@ -1,11 +1,7 @@
 ---
-import { Image } from 'astro:assets'
 import { getDict, type Lang } from '../i18n'
 const { lang } = Astro.props as { lang: Lang }
 const d = getDict(lang)
-// Imágenes opcionales: deja el archivo en src/assets/experience/ y pon su nombre en "image" (es.json y en.json)
-const imgs = import.meta.glob<{ default: ImageMetadata }>('../assets/experience/*.{jpg,jpeg,png,webp,avif}', { eager: true })
-const img = (name: string) => (name ? imgs[`../assets/experience/${name}`]?.default : undefined)
 ---
 
 <section id="experiencia" class="section wrap scroll-mt-14">
@@ -34,9 +30,6 @@ const img = (name: string) => (name ? imgs[`../assets/experience/${name}`]?.defa
             <ul class="mt-5 flex flex-wrap gap-2">
               {e.tags.map(t => <li class="chip">{t}</li>)}
             </ul>
-            {img(e.image) && (
-              <Image src={img(e.image)!} alt={e.imageAlt} widths={[480, 800, 1200]} sizes="(min-width: 768px) 40rem, 90vw" format="webp" loading="lazy" class="shot" />
-            )}
           </div>
         </details>
       </li>
@@ -49,10 +42,9 @@ const img = (name: string) => (name ? imgs[`../assets/experience/${name}`]?.defa
   .line::before { content: ''; position: absolute; left: 6px; top: 0; bottom: 0; width: 2px; background: #262c37; }
   li { border-bottom: 1px solid #262c37; }
   summary::-webkit-details-marker { display: none; }
-  details[open] > summary .chev { transform: rotate(45deg); color: #f2a33a; }
+  details[open] > summary .chev { transform: rotate(45deg); color: #f5b50a; }
   .chev { display: inline-block; transition: transform 320ms cubic-bezier(.2,.7,.2,1); font-size: 1.1rem; }
-  li:has(details[open]) .station { background: #f2a33a; border-color: #f2a33a; }
-  .shot { margin-top: 1.5rem; width: 100%; max-width: 40rem; border: 1px solid #262c37; border-radius: 6px; display: block; }
+  li:has(details[open]) .station { background: #f5b50a; border-color: #f5b50a; }
   .body { animation: abre 320ms cubic-bezier(.2,.7,.2,1); }
   @keyframes abre { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 </style>

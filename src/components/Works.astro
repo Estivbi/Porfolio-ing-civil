@@ -1,0 +1,32 @@
+---
+import { getDict, type Lang } from '../i18n'
+const { lang } = Astro.props as { lang: Lang }
+const d = getDict(lang)
+const w = d.works
+---
+
+<section id="obras" class="section wrap scroll-mt-14">
+  <h2 class="h2">{w.title}</h2>
+  <p class="mb-10 max-w-[56ch] text-niebla">{w.intro}</p>
+
+  <ul class="border-t border-riel">
+    {w.items.map(o => (
+      <li class="obra grid gap-x-10 gap-y-3 border-b border-riel py-8 md:grid-cols-[minmax(0,15rem)_1fr]">
+        <p class="figure font-bold text-ambar">{o.figure}</p>
+        <div>
+          <h3 class="text-s2 font-semibold tracking-tight">{o.name}</h3>
+          <p class="mt-2 max-w-[60ch] text-papel/90">{o.text}</p>
+          <dl class="mt-4 grid grid-cols-[auto_1fr] gap-x-5 gap-y-1 font-mono text-xs text-niebla">
+            <dt>{w.clientLabel}</dt><dd class="text-papel">{o.client}</dd>
+            <dt>{w.roleLabel}</dt><dd class="text-papel">{o.role}</dd>
+            <dt aria-hidden="true">·</dt><dd>{o.period}</dd>
+          </dl>
+        </div>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<style>
+  .figure { font-size: clamp(1.9rem, 4vw, 2.6rem); line-height: 1.05; letter-spacing: -.03em; }
+</style>

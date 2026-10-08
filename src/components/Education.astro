@@ -1,0 +1,33 @@
+---
+import { getDict, type Lang } from '../i18n'
+const { lang } = Astro.props as { lang: Lang }
+const d = getDict(lang)
+const e = d.education
+const groups = [
+  { title: e.degreesTitle, items: e.degrees },
+  { title: e.certsTitle, items: e.certs },
+]
+---
+
+<section id="formacion" class="section wrap scroll-mt-14">
+  <h2 class="h2">{e.title}</h2>
+
+  <div class="grid gap-14 lg:grid-cols-2 lg:gap-20">
+    {groups.map(g => (
+      <div>
+        <h3 class="mb-6 font-mono text-sm text-niebla">{g.title}</h3>
+        <ul class="border-t border-riel">
+          {g.items.map(i => (
+            <li class="flex items-start justify-between gap-6 border-b border-riel py-5">
+              <div>
+                <p class="text-s0 font-medium">{i.name}</p>
+                <p class="mt-1 font-mono text-xs text-niebla">{i.place}</p>
+              </div>
+              {i.period && <p class="shrink-0 font-mono text-xs text-niebla">{i.period}</p>}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</section>

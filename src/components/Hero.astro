@@ -1,7 +1,7 @@
 ---
 import { getDict, type Lang } from '../i18n'
 import LineMap from './LineMap.astro'
-import Lanyard from './Lanyard.astro'
+import CraneHero from './CraneHero.astro'
 const { lang } = Astro.props as { lang: Lang }
 const d = getDict(lang)
 const s = d.hero.sheet
@@ -11,28 +11,29 @@ const s = d.hero.sheet
   <div class="hero-grid">
     <div class="text">
       <dl class="mb-10 grid max-w-sm grid-cols-[auto_1fr] gap-x-6 gap-y-1 font-mono text-xs text-niebla">
-        <dt>{s.name}</dt><dd class="text-papel">Carolina Rodríguez</dd>
-        <dt>{s.role}</dt><dd class="text-papel">Full Stack · AI</dd>
+        <dt>{s.name}</dt><dd class="text-papel">Alejandro Hernández Fernández</dd>
+        <dt>{s.role}</dt><dd class="text-papel">{d.hero.role}</dd>
         <dt>{s.base}</dt><dd class="text-papel">{s.baseValue}</dd>
-        <dt>{s.stop}</dt><dd class="text-ambar">{s.stopValue}</dd>
+        <dt>{s.focus}</dt><dd class="text-ambar">{s.focusValue}</dd>
       </dl>
 
       <h1 class="name font-bold">
         <span class="block">{d.hero.name1}</span>
         <span class="block">{d.hero.name2}</span>
+        <span class="block">{d.hero.name3}</span>
       </h1>
-      <p class="mt-6 text-s1 text-ambar font-medium">{d.hero.role}</p>
+      <p class="mt-6 max-w-[28ch] text-s1 text-ambar font-medium">{d.hero.role}</p>
       <p class="mt-5 max-w-[34ch] text-s1 text-papel/90">{d.hero.intro}</p>
 
       <div class="mt-9 flex flex-wrap items-center gap-x-7 gap-y-4">
         <a href="#contacto" class="inline-flex items-center gap-2 rounded-sm bg-ambar px-6 py-3 font-semibold text-noche transition-colors duration-150 hover:bg-papel">
           {d.hero.cta}
         </a>
-        <a href="/cv-carolina-rodriguez.pdf" download class="underline underline-offset-4 decoration-riel transition-colors hover:decoration-ambar">{d.hero.cv}</a>
+        <a href="/cv-alejandro-hernandez.pdf" download class="underline underline-offset-4 decoration-riel transition-colors hover:decoration-ambar">{d.hero.cv}</a>
       </div>
     </div>
 
-    <div class="badge"><Lanyard lang={lang} /></div>
+    <div class="badge"><CraneHero lang={lang} /></div>
     <div class="map"><LineMap lang={lang} /></div>
   </div>
 </section>
@@ -44,12 +45,13 @@ const s = d.hero.sheet
     .hero-grid { grid-template-columns: 1.1fr 1fr; column-gap: 5rem; row-gap: 4.5rem; grid-template-areas: "text badge" "map badge"; }
   }
   .name {
-    font-size: clamp(3.4rem, 9vw, 7.2rem);
+    font-size: clamp(3rem, 8vw, 6rem);
     line-height: .92;
     letter-spacing: -.045em;
   }
   /* única animación de carga: el nombre sube una vez */
   .name span { animation: salida 900ms cubic-bezier(.2,.7,.2,1) both; }
   .name span:nth-child(2) { animation-delay: 90ms; }
+  .name span:nth-child(3) { animation-delay: 180ms; }
   @keyframes salida { from { opacity: 0; transform: translateY(.35em); } to { opacity: 1; transform: none; } }
 </style>

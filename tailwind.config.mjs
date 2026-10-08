@@ -9,7 +9,7 @@ export default {
         riel: '#262c37',
         papel: '#e9e6de',
         niebla: '#9aa3b2',
-        ambar: '#f2a33a',
+        ambar: '#f5b50a',
         envivo: '#3dd6b0',
       },
       fontFamily: {
