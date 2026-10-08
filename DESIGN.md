@@ -1,4 +1,4 @@
-# DESIGN.md — Portfolio de ingeniería civil
+# DESIGN.md — Portfolio de Ingeniero de Caminos
 
 ## Idea
 Una **obra con grúa**. En el hero, una grúa torre en 3D (three.js, procedural, sin marca) de cuyo gancho cuelga

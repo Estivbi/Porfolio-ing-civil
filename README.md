@@ -1,7 +1,7 @@
 # Portfolio de Alejandro Hernández Fernández
 
 Portfolio de Alejandro Hernández Fernández, Ingeniero de Caminos, Canales y Puertos en Madrid, con perfil de análisis de datos.
-Está en español (`/`) y en inglés (`/en`). Sirve también como **plantilla de portfolio para ingeniería civil**:
+Está en español (`/`) y en inglés (`/en`). Sirve también como **plantilla de portfolio para ingenieros de caminos**:
 cambiando los textos y la foto, vale para otra persona.
 
 ## Stack

@@ -1,8 +1,8 @@
 {
   "_review": "PENDIENTE DE REVISIÓN: traducción al inglés sin revisar.",
   "meta": {
-    "title": "Alejandro Hernández Fernández · Civil Engineer and Data Analyst",
-    "description": "Civil engineer (Ingeniero de Caminos, Canales y Puertos) in Madrid with a data analysis profile: cost control, KPIs, Python and automation applied to infrastructure and the water cycle."
+    "title": "Alejandro Hernández Fernández · Ingeniero de Caminos and Data Analyst",
+    "description": "Ingeniero de Caminos, Canales y Puertos in Madrid with a data analysis profile: cost control, KPIs, Python and automation applied to infrastructure and the water cycle."
   },
   "a11y": {
     "skip": "Skip to content",
@@ -22,8 +22,8 @@
     "name1": "Alejandro",
     "name2": "Hernández",
     "name3": "Fernández",
-    "role": "Civil Engineer · Data Analysis",
-    "intro": "Civil engineer with a data profile. I analyse costs and production KPIs, automate processes with Python and support decision-making in infrastructure.",
+    "role": "Ingeniero de Caminos · Data Analysis",
+    "intro": "Ingeniero de Caminos with a data profile. I analyse costs and production KPIs, automate processes with Python and support decision-making in infrastructure.",
     "cta": "Get in touch",
     "cv": "Download CV",
     "sheet": {
@@ -64,8 +64,8 @@
       }
     ],
     "badge": {
-      "label": "Civil engineering and data",
-      "back": "Madrid · Civil Engineer · Data analysis · Infrastructure"
+      "label": "Ingeniero de Caminos and data",
+      "back": "Madrid · Ingeniero de Caminos · Data analysis · Infrastructure"
     }
   },
   "marquee": {
@@ -92,7 +92,7 @@
   "about": {
     "title": "A bit about me.",
     "paragraphs": [
-      "I am a civil engineer (Ingeniero de Caminos, Canales y Puertos) with a technical profile geared towards data analysis and process automation. I apply technology to improve operational efficiency and decision-making in the infrastructure sector.",
+      "I am an Ingeniero de Caminos, Canales y Puertos with a technical profile geared towards data analysis and process automation. I apply technology to improve operational efficiency and decision-making in the infrastructure sector.",
       "I use Python applied to engineering, advanced Excel and the fundamentals of artificial intelligence and cloud with Microsoft Azure to analyse operational data, control costs and automate tasks.",
       "I do it from the inside. I have worked on site and on design since 2019, with experience in production, planning and budget control on wastewater treatment plants, trunk sewers, urban development works and data centres."
     ],
@@ -314,14 +314,12 @@
     "title": "Let's talk about your project.",
     "text": "If you have an infrastructure, a project or a data challenge where I can contribute, write to me.",
     "email": "alejandro.hfernandez95@gmail.com",
-    "phone": "+34 680 36 30 36",
-    "phoneHref": "+34680363036",
     "copy": "Copy email",
     "copied": "Copied.",
     "copyFail": "Could not copy. Select it and copy it by hand."
   },
   "footer": {
-    "made": "Madrid · Civil engineering.",
+    "made": "Madrid · Ingeniero de Caminos.",
     "top": "Back to top",
     "rights": "Alejandro Hernández Fernández"
   }

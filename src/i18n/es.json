@@ -1,7 +1,7 @@
 {
   "_review": "Idioma principal.",
   "meta": {
-    "title": "Alejandro Hernández Fernández · Ingeniero civil y analista de datos",
+    "title": "Alejandro Hernández Fernández · Ingeniero de Caminos y analista de datos",
     "description": "Ingeniero de Caminos, Canales y Puertos en Madrid con perfil de análisis de datos: control de costes, KPIs, Python y automatización aplicados a infraestructuras y ciclo del agua."
   },
   "a11y": {
@@ -23,7 +23,7 @@
     "name2": "Hernández",
     "name3": "Fernández",
     "role": "Ingeniero de Caminos · Análisis de datos",
-    "intro": "Ingeniero civil con perfil de datos. Analizo costes y KPIs de producción, automatizo procesos con Python y apoyo la toma de decisiones en infraestructuras.",
+    "intro": "Ingeniero de Caminos con perfil de datos. Analizo costes y KPIs de producción, automatizo procesos con Python y apoyo la toma de decisiones en infraestructuras.",
     "cta": "Hablemos",
     "cv": "Descargar CV",
     "sheet": {
@@ -64,7 +64,7 @@
       }
     ],
     "badge": {
-      "label": "Ingeniería civil y datos",
+      "label": "Ingeniero de Caminos y datos",
       "back": "Madrid · Ingeniero de Caminos · Análisis de datos · Infraestructuras"
     }
   },
@@ -314,14 +314,12 @@
     "title": "Hablemos de tu proyecto.",
     "text": "Si tienes una infraestructura, un proyecto o un reto de datos en el que pueda aportar, escríbeme.",
     "email": "alejandro.hfernandez95@gmail.com",
-    "phone": "+34 680 36 30 36",
-    "phoneHref": "+34680363036",
     "copy": "Copiar email",
     "copied": "Copiado.",
     "copyFail": "No se pudo copiar. Selecciónalo y cópialo a mano."
   },
   "footer": {
-    "made": "Madrid · Ingeniería civil.",
+    "made": "Madrid · Ingeniero de Caminos.",
     "top": "Volver arriba",
     "rights": "Alejandro Hernández Fernández"
   }
