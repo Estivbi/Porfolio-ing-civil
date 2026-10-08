@@ -2,6 +2,7 @@
 import { getDict, type Lang } from '../i18n'
 import LineMap from './LineMap.astro'
 import Lanyard from './Lanyard.astro'
+import Listen from './Listen.astro'
 const { lang } = Astro.props as { lang: Lang }
 const d = getDict(lang)
 const s = d.hero.sheet
@@ -30,6 +31,7 @@ const s = d.hero.sheet
         </a>
         <a href="/cv-carolina-rodriguez.pdf" download class="underline underline-offset-4 decoration-riel transition-colors hover:decoration-ambar">{d.hero.cv}</a>
       </div>
+      <Listen lang={lang} />
     </div>
 
     <div class="badge"><Lanyard lang={lang} /></div>

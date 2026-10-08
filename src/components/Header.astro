@@ -7,22 +7,23 @@ const links = [
   { t: d.nav.about, h: `${home}#sobre-mi` },
   { t: d.nav.experience, h: `${home}#experiencia` },
   { t: d.nav.work, h: `${home}#proyectos` },
-  { t: d.nav.blog, h: path(lang, '/blog/') },
+  { t: d.nav.contact, h: `${home}#contacto` },
 ]
 const other: Lang = lang === 'es' ? 'en' : 'es'
 ---
 
-<header class="sticky top-0 z-50 border-b border-riel/70 bg-noche/80 backdrop-blur-md">
+<header class="sticky top-0 z-50 border-b border-riel/70 bg-noche/80 backdrop-blur-md" data-header>
   <div class="wrap flex h-14 items-center justify-between gap-6">
     <a href={home} class="flex items-center gap-2 font-semibold tracking-tight">
       <span class="station" aria-hidden="true" style="border-color:#f2a33a"></span>
       Carolina Rodríguez
     </a>
+
     <nav aria-label={d.a11y.menu} class="flex items-center gap-5 text-sm md:gap-7">
       <ul class="hidden items-center gap-7 md:flex">
         {links.map(l => <li><a href={l.h} class="text-niebla transition-colors duration-150 hover:text-papel">{l.t}</a></li>)}
       </ul>
-      <a href="/cv-carolina-rodriguez.pdf" download class="hidden text-niebla transition-colors hover:text-papel sm:inline">{d.nav.cv}</a>
+      <a href="/cv-carolina-rodriguez.pdf" download class="hidden text-niebla transition-colors hover:text-papel md:inline">{d.nav.cv}</a>
       <a
         href={path(other, route)}
         hreflang={other}
@@ -34,6 +35,68 @@ const other: Lang = lang === 'es' ? 'en' : 'es'
         <span aria-hidden="true"> / </span>
         <span class={lang === 'en' ? 'text-papel' : ''} aria-current={lang === 'en' ? 'true' : undefined}>EN</span>
       </a>
+      <button
+        type="button"
+        class="burger md:hidden"
+        aria-expanded="false"
+        aria-controls="menu"
+        aria-label={d.a11y.openMenu}
+        data-burger
+        data-open={d.a11y.openMenu}
+        data-close={d.a11y.closeMenu}
+      >
+        <span></span><span></span>
+      </button>
     </nav>
   </div>
+
+  <div id="menu" class="menu md:hidden" data-menu hidden>
+    <ul class="wrap py-4">
+      {links.map(l => (
+        <li><a href={l.h} class="block border-b border-riel py-4 text-s2 font-semibold tracking-tight">{l.t}</a></li>
+      ))}
+      <li><a href="/cv-carolina-rodriguez.pdf" download class="block py-4 text-s1 text-niebla">{d.nav.cv}</a></li>
+    </ul>
+  </div>
 </header>
+
+<style>
+  .burger { position: relative; width: 36px; height: 36px; margin-right: -8px; }
+  .burger span {
+    position: absolute; left: 8px; right: 8px; height: 2px; background: #e9e6de; border-radius: 1px;
+    transition: transform 320ms cubic-bezier(.2,.7,.2,1), top 320ms cubic-bezier(.2,.7,.2,1);
+  }
+  .burger span:first-child { top: 13px; }
+  .burger span:last-child { top: 21px; }
+  .burger[aria-expanded='true'] span:first-child { top: 17px; transform: rotate(45deg); }
+  .burger[aria-expanded='true'] span:last-child { top: 17px; transform: rotate(-45deg); }
+
+  .menu { border-top: 1px solid #262c37; background: #0a0c10; max-height: calc(100dvh - 56px); overflow-y: auto; }
+  .menu:not([hidden]) { animation: baja 320ms cubic-bezier(.2,.7,.2,1); }
+  @keyframes baja { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+</style>
+
+<script>
+  function init() {
+    const header = document.querySelector<HTMLElement>('[data-header]')
+    const burger = header?.querySelector<HTMLButtonElement>('[data-burger]')
+    const menu = header?.querySelector<HTMLElement>('[data-menu]')
+    if (!header || !burger || !menu || burger.dataset.ready) return
+    burger.dataset.ready = '1'
+
+    const set = (open: boolean) => {
+      burger.setAttribute('aria-expanded', String(open))
+      burger.setAttribute('aria-label', open ? burger.dataset.close! : burger.dataset.open!)
+      menu.hidden = !open
+      document.body.style.overflow = open ? 'hidden' : ''
+    }
+    burger.addEventListener('click', () => set(menu.hidden))
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => set(false)))
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && !menu.hidden) { set(false); burger.focus() }
+    })
+    // si se agranda la ventana, cierra el menú móvil
+    window.matchMedia('(min-width: 768px)').addEventListener('change', e => { if (e.matches) set(false) })
+  }
+  document.addEventListener('astro:page-load', init)
+</script>

@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 import Hero from './Hero.astro'
 import Marquee from './Marquee.astro'
+import Help from './Help.astro'
 import About from './About.astro'
 import Experience from './Experience.astro'
 import Work from './Work.astro'
@@ -13,6 +14,7 @@ const { lang } = Astro.props as { lang: Lang }
 <Layout lang={lang} route="/">
   <Hero lang={lang} />
   <Marquee lang={lang} />
+  <Help lang={lang} />
   <About lang={lang} />
   <Experience lang={lang} />
   <Work lang={lang} />

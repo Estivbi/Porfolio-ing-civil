@@ -7,13 +7,14 @@
   "a11y": {
     "skip": "Skip to content",
     "menu": "Main",
-    "lang": "Change language"
+    "lang": "Change language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "nav": {
     "about": "About",
     "experience": "Experience",
     "work": "Work",
-    "blog": "Blog",
     "contact": "Contact",
     "cv": "Résumé"
   },
@@ -279,10 +280,32 @@
     "top": "Back to the start",
     "rights": "Carolina Rodríguez"
   },
-  "blog": {
-    "title": "Logbook.",
-    "intro": "Notes on development, agents and product. There are no posts yet, but they are coming.",
-    "empty": "No posts yet.",
-    "back": "Back home"
+  "help": {
+    "title": "I can help with.",
+    "cta": "Tell me your case",
+    "items": [
+      {
+        "name": "A website or product from scratch",
+        "text": "I design it, build it and deploy it: from the interface to the database, on web and mobile."
+      },
+      {
+        "name": "Modernizing an old system",
+        "text": "I refactor legacy code, document the APIs and renew the interface without stopping the business."
+      },
+      {
+        "name": "Automating with AI",
+        "text": "Agents and automations with LangGraph and LLMs that work on their own and alert you if something fails."
+      },
+      {
+        "name": "Third-party integrations",
+        "text": "Official APIs, authentication and validations, like the integration with the Spanish tax agency."
+      }
+    ]
+  },
+  "listen": {
+    "label": "Listen to me",
+    "pause": "Pause",
+    "transcript": "Read the transcript",
+    "text": ""
   }
 }

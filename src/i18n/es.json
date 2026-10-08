@@ -7,13 +7,14 @@
   "a11y": {
     "skip": "Saltar al contenido",
     "menu": "Principal",
-    "lang": "Cambiar idioma"
+    "lang": "Cambiar idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
   },
   "nav": {
     "about": "Sobre mí",
     "experience": "Experiencia",
     "work": "Proyectos",
-    "blog": "Blog",
     "contact": "Contacto",
     "cv": "CV"
   },
@@ -279,10 +280,32 @@
     "top": "Volver a cabecera",
     "rights": "Carolina Rodríguez"
   },
-  "blog": {
-    "title": "Cuaderno de bitácora.",
-    "intro": "Notas sobre desarrollo, agentes y producto. Todavía no hay entradas, pero llegarán.",
-    "empty": "Aún no hay entradas.",
-    "back": "Volver al inicio"
+  "help": {
+    "title": "Puedo ayudarte con.",
+    "cta": "Cuéntame tu caso",
+    "items": [
+      {
+        "name": "Una web o un producto desde cero",
+        "text": "Lo diseño, lo construyo y lo despliego: de la interfaz a la base de datos, en web y en móvil."
+      },
+      {
+        "name": "Modernizar un sistema antiguo",
+        "text": "Refactorizo código legacy, documento las APIs y renuevo la interfaz sin parar el negocio."
+      },
+      {
+        "name": "Automatizar con IA",
+        "text": "Agentes y automatizaciones con LangGraph y LLMs que trabajan solos y avisan si algo falla."
+      },
+      {
+        "name": "Integraciones con terceros",
+        "text": "APIs oficiales, autenticación y validaciones, como la integración con la Agencia Tributaria."
+      }
+    ]
+  },
+  "listen": {
+    "label": "Escúchame",
+    "pause": "Pausar",
+    "transcript": "Leer la transcripción",
+    "text": "Hola, soy Carolina Rodríguez, desarrolladora full stack. La idea de poner este audio en mi portfolio, en mi currículum, es un poco para que, aparte de que me pongas cara con la imagen, aunque no sea lo mismo, por lo menos también me escuches y veas que hay una persona real detrás de todo este currículum y de todo este desarrollo.\n\nSi te interesa lo que ves en él, ya sea para un desarrollo propio o para contratarme para tu empresa, estoy abierta a escuchar y abierta a nuevas oportunidades. Lo que más me gusta ahora mismo en el desarrollo actual es desarrollar con agentes de IA y automatizaciones. Me parece algo fascinante, algo que está en auge, muy de moda, y algo en el que además hay que ponerle ciertos límites y, sobre todo, cierta precaución, no hacerlo a la ligera.\n\nSi te interesa, tienes mi currículum. Bueno, mejor dicho, tienes mi correo electrónico más abajo, así que no dudes en escribirme. Muchas gracias."
   }
 }

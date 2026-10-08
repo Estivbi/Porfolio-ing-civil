@@ -1,0 +1,74 @@
+---
+import { getDict, type Lang } from '../i18n'
+const { lang } = Astro.props as { lang: Lang }
+const d = getDict(lang)
+
+// Deja la grabación en src/assets/audio/ con el nombre presentacion.es.mp3 / presentacion.en.mp3
+// (también vale .m4a, .ogg o .wav). Si no existe el archivo de este idioma, el botón no se muestra.
+const files = import.meta.glob<string>('../assets/audio/*.{mp3,m4a,ogg,wav}', { eager: true, query: '?url', import: 'default' })
+const src = Object.entries(files).find(([k]) => k.includes(`presentacion.${lang}.`))?.[1]
+---
+
+{src && (
+  <div class="listen" data-listen>
+    <button type="button" class="play" data-play aria-pressed="false" data-label={d.listen.label} data-pause={d.listen.pause}>
+      <svg class="icon i-play" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z" fill="currentColor" /></svg>
+      <svg class="icon i-pause" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5h3v11H3zM8 1.5h3v11H8z" fill="currentColor" /></svg>
+      <span data-text>{d.listen.label}</span>
+    </button>
+    <span class="bar" aria-hidden="true"><span class="fill" data-fill></span></span>
+    <audio preload="none" src={src} data-audio></audio>
+    {d.listen.text && (
+      <details class="transcript">
+        <summary>{d.listen.transcript}</summary>
+        {d.listen.text.split('\n\n').map(par => <p>{par}</p>)}
+      </details>
+    )}
+  </div>
+)}
+
+<style>
+  .listen { margin-top: 1.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: .9rem 1rem; }
+  .play {
+    display: inline-flex; align-items: center; gap: .6rem; cursor: pointer;
+    border: 1px solid #262c37; border-radius: 2px; padding: .7rem 1.1rem; color: #e9e6de;
+    font-weight: 500; transition: border-color .15s, color .15s;
+  }
+  .play:hover { border-color: #f2a33a; }
+  .play .i-pause { display: none; }
+  .play[aria-pressed='true'] .i-pause { display: block; }
+  .play[aria-pressed='true'] .i-play { display: none; }
+  .play[aria-pressed='true'] { border-color: #f2a33a; }
+  .bar { position: relative; width: 6rem; height: 2px; background: #262c37; }
+  .fill { position: absolute; inset: 0 auto 0 0; width: 0; background: #f2a33a; }
+  .transcript { flex-basis: 100%; font-size: .9rem; color: #9aa3b2; }
+  .transcript summary { cursor: pointer; width: max-content; text-decoration: underline; text-underline-offset: 4px; }
+  .transcript p { margin-top: .6rem; max-width: 52ch; }
+</style>
+
+<script>
+  function init() {
+    document.querySelectorAll<HTMLElement>('[data-listen]').forEach(root => {
+      if (root.dataset.ready) return
+      root.dataset.ready = '1'
+      const audio = root.querySelector<HTMLAudioElement>('[data-audio]')!
+      const btn = root.querySelector<HTMLButtonElement>('[data-play]')!
+      const text = root.querySelector<HTMLElement>('[data-text]')!
+      const fill = root.querySelector<HTMLElement>('[data-fill]')!
+      const set = (playing: boolean) => {
+        btn.setAttribute('aria-pressed', String(playing))
+        text.textContent = playing ? btn.dataset.pause! : btn.dataset.label!
+      }
+      btn.addEventListener('click', () => { audio.paused ? audio.play().catch(() => set(false)) : audio.pause() })
+      audio.addEventListener('play', () => set(true))
+      audio.addEventListener('pause', () => set(false))
+      audio.addEventListener('ended', () => { set(false); fill.style.width = '0' })
+      audio.addEventListener('timeupdate', () => {
+        if (audio.duration) fill.style.width = `${(audio.currentTime / audio.duration) * 100}%`
+      })
+      // al cambiar de página con View Transitions, no sigue sonando
+      document.addEventListener('astro:before-swap', () => audio.pause(), { once: true })
+    })
+  }
+  document.addEventListener('astro:page-load', init)
+</script>

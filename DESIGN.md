@@ -71,8 +71,8 @@ Layout
 
 ## 4. Estructura y rutas
 `/` (es, por defecto) y `/en`. i18n nativo de Astro; textos en `src/i18n/es.json` y `en.json`.
-Traducción EN marcada con `<!-- PENDIENTE DE REVISIÓN: inglés -->`. Blog: `/blog` y `/en/blog`, vacío, preparado para MDX.
-1 Hero · 2 Marquee de stack · 3 Sobre mí + 6 áreas · 4 Experiencia (timeline expandible) · 5 Proyectos (marco de navegador) · 6 Contacto + footer · 7 Blog.
+Traducción EN marcada con `<!-- PENDIENTE DE REVISIÓN: inglés -->`. El blog se descartó; queda como idea un apartado técnico con casos de estudio.
+1 Hero · 2 Marquee de stack · 3 Sobre mí + 6 áreas · 4 Experiencia (timeline expandible) · 5 Proyectos (marco de navegador) · 6 Contacto + footer. (El bloque «Puedo ayudarte con» va tras el marquee.)
 
 ## 5. Reglas de contenido
 - "Stibios" = marca personal de producto independiente. Nunca "empresa", "compañía" ni "S.L.".
@@ -86,7 +86,6 @@ imágenes webp/avif, Lighthouse > 95 en las 4 categorías, reduced-motion respet
 ## 7. Implementación (resumen)
 - Astro 4.4 + Tailwind 3 + i18n nativo (es en `/`, en `/en`), diccionarios `src/i18n/es.json` y `en.json` (tipados: si difieren, no compila).
 - Hero: mapa de línea interactivo (`LineMap.astro`), un único recorrido al cargar; reduced-motion lo coloca en la última estación.
-- Blog preparado: colección `blog` (MDX) con `lang`; `src/content/blog/plantilla.mdx` es una plantilla en `draft: true`.
 - SEO: canonical, hreflang es/en/x-default, OG, sitemap con i18n, JSON-LD Person. `SITE` en `astro.config.mjs`.
 - Fuentes autoalojadas (Fontsource) e imágenes con `astro:assets` (webp).
 - Lighthouse: sin medir todavía.
